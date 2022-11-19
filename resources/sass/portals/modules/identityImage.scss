@@ -1,0 +1,313 @@
+.image-identity {
+  &__title {
+    p {
+      margin: 22px 25px;
+      font-size: 18px;
+      line-height: 24px;
+      color: #43425D;
+    }
+  }
+
+  &__content {
+    padding-bottom: 20px;
+    background: #FFFFFF;
+    color: #333333;
+    margin: 0 29px 30px 25px;
+    border-radius: 5px;
+
+    #search-form {
+      padding: 28px 0 0 30px;
+    }
+
+    .list-option {
+      font-size: 12px;
+      line-height: 16px;
+
+      &__title {
+        margin-bottom: 3px;
+      }
+    }
+
+    .input-user-id {
+      height: 36px;
+      border: 1px solid #CCCCCC;
+      border-radius: 3px;
+      padding-left: 20px;
+      font-size: 14px;
+      width: 135px;
+      margin-right: 20px;
+      color: #333333;
+      box-shadow: none;
+      outline: none;
+    }
+
+    .status {
+      box-shadow: none;
+      outline: none;
+      height: 36px;
+      width: 135px;
+      font-size: 14px;
+      color: #333333;
+      border: 1px solid #CCCCCC;
+
+      &__option {
+        color: #333333
+      }
+    }
+
+    .btn-search {
+      width: 60px;
+      height: 36px;
+      margin-left: 40px;
+      position: absolute;
+      bottom: 0;
+      border: none;
+      box-shadow: none;
+      outline: none;
+      border-radius: 3px;
+      font-size: 15px;
+      background-color: #1874C4;
+      border-color: #1874C4;
+
+      &:active {
+        background-color: #1874C4 !important;
+        border-color: #1874C4 !important;
+      }
+
+      &:hover {
+        background-color: #1874C4 !important;
+        border-color: #1874C4 !important;
+      }
+    }
+
+    .devide {
+      margin: 20px 0;
+    }
+
+    .table-content {
+      padding: 0 30px;
+
+      .record {
+        margin-bottom: 10px;
+
+        .custom-select {
+          width: 80px;
+          height: 30px;
+          margin-right: 10px;
+          color: #333333;
+          outline: none;
+          box-shadow: none;
+        }
+
+        span {
+          font-size: 15px;
+        }
+      }
+
+      table, td, th {
+        color: #333333;
+        border: 1px solid #CCCCCC;
+        border-collapse: collapse;
+      }
+
+      .modal-image {
+        .modal-content {
+          border-radius: 0;
+          min-width: 700px;
+          height: 650px;
+
+          .close {
+            position: relative;
+            opacity: 1;
+
+            .icon-close {
+              right: -18px;
+              top: -8px;
+              color: white;
+              position: absolute;
+              opacity: 1;
+            }
+          }
+
+          .modal-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .identity-image__large {
+              max-width: 650px;
+              max-height: 640px;
+            }
+          }
+        }
+      }
+
+      .table {
+        width: 100%;
+        overflow-x: auto;
+
+        td {
+          vertical-align: middle;
+          font-size: 15px;
+          line-break: anywhere;
+        }
+
+        th {
+          border-top: 1px solid #CCCCCC;
+          border-bottom: 2px solid #CCCCCC;
+        }
+      }
+
+      .indentity-image__id, .indentity-image__user_id {
+        min-width: 80px;
+        height: 50px;
+        max-width: 120px;
+      }
+
+      .indentity-image__teacher-category, .indentity-image__name, .indentity-image__account_name {
+        min-width: 180px;
+        max-width: 218px;
+      }
+
+      .indentity-image__image_url {
+        min-width: 160px;
+        max-width: 300px;
+      }
+
+      .indentity-image__updated-at {
+        min-width: 125px;
+        max-width: 218px;
+      }
+
+      .indentity-image__action {
+        min-width: 100px;
+        max-width: 150px;
+      }
+
+      .indentity-image__status {
+        min-width: 100px;
+        max-width: 150px;
+
+        .indentity-image__status-content {
+          border-radius: 15px;
+          color: white;
+          padding: 2px;
+          text-align: center;
+        }
+
+        .approval {
+          background-color: #1155CC;
+        }
+
+        .approved {
+          background-color: #40AA71;
+        }
+
+        .rejected {
+          background-color: #FF0000;
+        }
+      }
+
+      .indentity-image__result {
+        min-width: 100px;
+        max-width: 150px;
+
+        .indentity-image__result-notification {
+          border-radius: 15px;
+          color: white;
+          padding: 2px;
+          text-align: center;
+        }
+
+        .approved {
+          background-color: #40AA71;
+        }
+      }
+
+      .indentity-image__notification-date {
+        min-width: 125px;
+        max-width: 200px;
+        text-align: center;
+      }
+
+      .identity-image__image {
+        width: 140px;
+        height: 130px;
+        cursor: pointer;
+        object-fit: cover;
+      }
+
+      .modal-content {
+        width: 400px;
+        height: 200px;
+        margin: auto;
+
+        .modal-header {
+          border: none;
+          padding-bottom: 0px;
+        }
+
+        .modal-body {
+          padding-top: 0;
+        }
+
+        .modal--text {
+          font-size: 15px;
+          line-height: 20px;
+          color: #333333;
+          margin-bottom: 0;
+        }
+
+        .modal-footer {
+          padding-top: 0px;
+          padding-bottom: 36px;
+          border: none;
+          display: flex;
+          justify-content: space-evenly;
+
+          .button-confirm {
+            width: 150px;
+            height: 50px;
+
+            &--left {
+              color: #333333;
+              border: 1px solid #CCCCCC;
+            }
+
+            &--right {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+
+      .user-link-detail {
+        color: #1874C4;
+        text-decoration: none;
+      }
+
+      .group-btn-action {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .button {
+        width: 60px;
+        height: 30px;
+        font-size: 13px;
+        line-height: 13px;
+
+        &--left {
+          background-color: #40AA71;
+          color: #ffffff;
+          margin-bottom: 4px;
+        }
+
+        &--right {
+          background-color: #FF0000;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,282 @@
+/*Video call extension request*/
+.extension-request {
+  text-align: center;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  background: #ffff;
+
+  &__title {
+    background: #E9EAEC;
+    border-radius: 3px;
+    padding: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #2A3242;
+    border: 1px solid #E1E1E1;
+    border-bottom: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__price {
+    border: 1px solid #E1E1E1;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    .no-option-extend {
+      height: auto;
+    }
+
+    &__option {
+      height: 48px;
+
+      &:not(:first-child) {
+        border-top: 1px solid #E1E1E1;
+      }
+
+      > .no-option {
+        font-size: 16px;
+        color: #EE3D48;
+        padding: 40px 0;
+      }
+
+      /* The container */
+      &__option-outline {
+        margin-bottom: 0;
+        line-height: 48px;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+      }
+
+      /* Create a custom radio button */
+      .checkmark {
+        position: absolute;
+        top: 17px;
+        height: 15px;
+        width: 15px;
+        right: 65%;
+        border: 1px solid #46CB90;
+        border-radius: 50%;
+      }
+
+      /* On mouse-over, add a grey background color */
+      &__option-outline:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+
+      /* When the radio button is checked, add a blue background */
+      &__option-outline input:checked ~ .checkmark {
+        background: none;
+      }
+
+      /* Create the indicator (the dot/circle - hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      /* Show the indicator (dot/circle) when checked */
+      &__option-outline input:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      /* Style the indicator (dot/circle) */
+      &__option-outline .checkmark:after {
+        top: 2px;
+        left: 2px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #46CB90;
+      }
+
+      span {
+        font-family: "Roboto";
+        font-weight: bold;
+        font-size: 14px;
+        color: #2A3242;
+      }
+    }
+  }
+
+  &__refuse-request-text {
+    padding: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #EE3D48
+  }
+
+  &__submit {
+    margin: 10px 0 2px;
+
+    &__btn-sent-request {
+      background: #46CB90;
+      border: 1px solid #46CB90;
+      border-radius: 5px;
+      color: #FFFFFF;
+      font-weight: 600;
+      font-size: 14px;
+      width: 100%;
+      height: 41px;
+    }
+  }
+
+  &__dropdown-option {
+    margin-bottom: 15px;
+
+    .dropdown {
+      width: 100%;
+    }
+
+    .drop-btn-extension-mobile {
+      display: none;
+    }
+
+    &__btn-dropdown-toggle {
+      cursor: pointer;
+
+      &__icon-primary-plus {
+        max-width: 15px;
+        max-height: 15px;
+      }
+
+      &__icon-dropdown-arrow, &__icon-dropdown-arrow-right {
+        max-width: 15px;
+        max-height: 15px;
+        width: 15px;
+      }
+
+      &__icon-dropdown-arrow {
+        display: none;
+      }
+    }
+
+    &__btn-dropdown-toggle::after {
+      content: none;
+    }
+
+    &__menu-custom {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 25px !important;
+      transform: none !important;
+      will-change: unset !important;
+      background: #FFFFFF;
+      border: 1px solid rgba(42, 50, 66, 0.32);
+      box-sizing: border-box;
+      border-radius: 4.10334px;
+      z-index: 97;
+
+      li {
+        border-top: 1px solid #ECECEC;
+        padding: 16px 16px 0 16px;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        input[type=checkbox] {
+          position: relative;
+          cursor: pointer;
+        }
+
+        input[type=checkbox]:before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          top: -1.5px;
+          left: 0;
+          //border: none;
+          border-radius: 2px;
+          background: #fff;
+          border: 1px solid #4E5768;
+        }
+
+        input[type=checkbox]:checked:before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          top: -2px;
+          left: -2px;
+          border: none;
+          border-radius: 2px;
+          background-color: #46CB90;
+        }
+
+        input[type=checkbox]:after {
+          content: "";
+          display: block;
+          width: 5px;
+          height: 10px;
+          border: solid #FFFFFF;
+          border-width: 0 2px 2px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          position: absolute;
+          top: 0px;
+          left: 5px;
+        }
+
+        input[type=checkbox]:checked:after {
+          content: "";
+          display: block;
+          width: 5px;
+          height: 10px;
+          border: solid #FFFFFF;
+          border-width: 0 2px 2px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          position: absolute;
+          top: 0px;
+          left: 4px;
+        }
+
+      }
+
+      li:first-child {
+        border-top: none;
+        padding-bottom: 0;
+      }
+
+      input[type='checkbox'] {
+        margin-right: 5px;
+      }
+
+      &__price {
+        margin-left: auto;
+        white-space: nowrap;
+
+        img {
+          margin-bottom: 3px;
+          margin-right: 3px;
+        }
+
+        font-size: 12px;
+      }
+
+      &__name {
+        width: 100%;
+        word-break: break-all;
+      }
+    }
+  }
+}

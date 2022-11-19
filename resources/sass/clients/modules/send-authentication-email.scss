@@ -1,0 +1,108 @@
+.email-auth {
+    width: 601px;
+    margin: 0 auto;
+
+    &__content {
+        padding: 32px 0 32.88px 0;
+        background-color:#F9FAFB;
+        box-sizing: border-box;
+        border-radius: 5px;
+        h2 {
+            font-size: 16px;
+            line-height: 24px;
+            color: #46CB90;
+            margin-bottom: 14px;
+            width: 100%;
+            overflow-wrap: break-word;
+        }
+        p {
+            font-size: 14px;
+            line-height: 21px;
+            color: #2A3242;
+            margin-bottom: 0;
+        }
+    }
+    &__action {
+        div {
+            display: block;
+            color: #2A3242;
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 21px;
+            margin-bottom: 6.42px;
+        }
+        button {
+            background-color: #46CB90;
+            color: #FFFFFF;
+            font-size: 14px;
+            line-height: 21px;
+            width: 250px;
+            height: 41px;
+            border-radius: 5px;
+            border: 1px solid #46CB90;
+            box-sizing: border-box;
+        }
+    }
+    .br-mobile {
+        display: none;
+    }
+}
+
+// MOBILE
+@media only screen and (max-width: 767px) {
+    .email-auth-wrap {
+        padding: 0 10px;
+        .email-auth {
+            width: 100%;
+            margin: 0 auto;
+        
+            &__content {
+                padding: 25px 0;
+                background-color:#F9FAFB;
+                box-sizing: border-box;
+                border-radius: 5px;
+                h2 {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #46CB90;
+                    margin-bottom: 9px;
+                    width: 100%;
+                    overflow-wrap: break-word;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #2A3242;
+                    margin-bottom: 0;
+                }
+                .p--mobile {
+                    // padding: 0 18px;
+                }
+            }
+            &__action {
+                div {
+                    display: block;
+                    color: #2A3242;
+                    font-size: 12px;
+                    line-height: 18px;
+                    margin-top: 25px;
+                    margin-bottom: 6.42px;
+                }
+                button {
+                    background-color: #46CB90;
+                    color: #FFFFFF;
+                    font-size: 14px;
+                    line-height: 21px;
+                    width: 250px;
+                    height: 41px;
+                    border-radius: 5px;
+                    border: 1px solid #46CB90;
+                    box-sizing: border-box;
+                }
+            }
+        }
+        .br-mobile {
+            display: block;
+        }
+    }
+}

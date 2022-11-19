@@ -1,0 +1,389 @@
+.courses-list {
+  &__title {
+    p {
+      margin: 22px 25px;
+      font-size: 18px;
+      line-height: 24px;
+      color: #43425D;
+    }
+  }
+
+  &__content {
+    padding-bottom: 20px;
+    background: #FFFFFF;
+    margin: 0 29px 30px 25px;
+    border-radius: 5px;
+
+    #form-search {
+      padding: 18px 0 0 30px;
+    }
+
+    .jquery-datetime-picker {
+      height: 32px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    .list-option--top {
+      font-size: 12px;
+
+      input {
+        height: 40px;
+        border: 1px solid #CCCCCC;
+        border-radius: 3px;
+      }
+
+      p {
+        margin-top: 10px;
+        margin-bottom: 0;
+        color: #333333;
+      }
+
+      input {
+        padding: 0 10px;
+      }
+
+      select {
+        padding: 0 20px 0 10px;
+      }
+
+      .user-id {
+        margin-right: 20px;
+        width: 134px;
+      }
+    }
+
+    .list-option--bottom {
+      font-size: 12px;
+
+      .seller {
+        margin-right: 10px !important;
+      }
+
+      .status-approval {
+        display: inline-block;
+        width: 100%;
+        //height: calc(1.5em + 0.75rem + 2px);
+        height: 30px;
+        padding: 0 1.75rem 0 0.75rem;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.5;
+        vertical-align: middle;
+        border: 1px solid #cccc;
+        border-radius: 0.25rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        color: #768192;
+        background: #ffff;
+      }
+
+      .status, .category, .seller {
+        max-width: 199px;
+        width: 100%;
+        margin-right: 20px;
+      }
+
+      input {
+        height: 30px;
+        border: 1px solid #CCCCCC;
+        border-radius: 3px;
+        padding: 0 10px;
+        width: 100%;
+      }
+
+      margin-bottom: 30px;
+      position: relative;
+
+      p {
+        margin-top: 10px;
+        margin-bottom: 0;
+        color: #333333;
+      }
+
+      .btn-search {
+        width: 60px;
+        height: 30px;
+        position: absolute;
+        bottom: 0;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        border-radius: 3px;
+        font-size: 15px;
+        background-color: #1874C4;
+        margin-left: 0;
+
+        &:active {
+          background-color: #1874C4 !important;
+          border-color: #1874C4 !important;
+        }
+
+        &:hover {
+          background-color: #1874C4 !important;
+          border-color: #1874C4 !important;
+        }
+      }
+    }
+
+    .table-content {
+      margin-bottom: 10px;
+      padding: 0 30px;
+
+      .page-item {
+        color: #666666;
+      }
+
+      .page-item {
+        color: #1874C4;
+      }
+
+      .record {
+        margin-bottom: 10px;
+
+        .custom-select {
+          width: 80px;
+          height: 30px;
+          margin-right: 10px;
+        }
+
+        span {
+          font-size: 15px;
+          color: #333333;
+        }
+
+        #select-per-page {
+          font-size: 15px;
+          color: #333333;
+        }
+      }
+
+      td {
+        color: #333333;
+      }
+
+      th {
+        font-size: 13px;
+        height: 50px;
+        border-top: solid 1px #CCCCCC;
+        border-bottom: solid 2px #CCCCCC;
+        border-right: solid 1px #CCCCCC;
+
+        &:last-child {
+          border-right: solid 1px #CCCCCC;
+        }
+      }
+
+      tr {
+        &:last-child {
+          td {
+            border-bottom: solid 1px #CCCCCC;
+          }
+        }
+
+        td {
+          border-right: solid 2px #CCCCCC;
+
+          &:last-child {
+            border-right: solid 1px #CCCCCC;
+          }
+        }
+      }
+
+      .table {
+        margin-bottom: 27px;
+        font-size: 15px;
+
+        .not-view {
+          background: #1155CC 0% 0% no-repeat padding-box;
+          border-radius: 15px;
+          text-align: center;
+          color: #FFFFFF;
+          padding: 2px;
+        }
+
+        .approval {
+          background: #40AA71 0% 0% no-repeat padding-box;
+          text-align: center;
+          border-radius: 15px;
+          color: #FFFFFF;
+          padding: 2px;
+        }
+
+        .approval-notice {
+          background: #40AA71 0% 0% no-repeat padding-box;
+          border-radius: 15px;
+          color: #FFFFFF;
+          padding: 2px;
+        }
+
+        .reject {
+          background: #FF0000 0% 0% no-repeat padding-box;
+          text-align: center;
+          border-radius: 15px;
+          color: #FFFFFF;
+          padding: 2px;
+        }
+
+        .btn-review {
+          background: #FFFFFF 0% 0% no-repeat padding-box;
+          border: 1px solid #CCCCCC;
+          border-radius: 3px;
+          padding: 6.5px 34.5px;
+          color: #666666;
+        }
+
+        .btn-review-course-custom {
+          padding: 0;
+          display: inline-block;
+          width: 95px;
+          height: 30px;
+          line-height: 30px;
+          text-decoration: none;
+          font-size: 13px;
+        }
+      }
+    }
+
+    .table__footer {
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+.course-detail {
+  padding: 0 25px;
+
+  td {
+    padding: 0;
+    color: #333333;
+    font-size: 15px;
+  }
+
+  &__title {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 18px;
+
+    div {
+      line-height: 24px;
+      color: #43425D;
+    }
+
+    .btn-back {
+      margin-right: 0;
+      margin-left: auto;
+      color: #666666;
+      background: #FAFAFA 0% 0% no-repeat padding-box;
+      border: 1px solid #CCCCCC;
+      border-radius: 3px;
+      width: 105px;
+      height: 41px;
+      line-height: 41px;
+      font-size: 15px;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+
+  &__content {
+    padding: 32px 30px;
+    background: #FFFFFF;
+    border-radius: 5px;
+
+    p {
+      margin: 0;
+    }
+
+    table {
+      width: 100%;
+
+      .image-item {
+        padding: 8px 0;
+      }
+
+      .course-label {
+        width: 218px;
+        padding: 15px;
+        background: #F2F2F2 0% 0% no-repeat padding-box;
+      }
+
+      .course-item {
+        padding-left: 24px;
+
+        .image {
+          width: 140px;
+          height: 130px;
+          object-fit: contain;
+        }
+
+        .image:not(:first-child) {
+          margin-left: 21.3px;
+        }
+      }
+
+      .image-label {
+        padding-top: 15px;
+      }
+
+      .minutes-required, .price {
+        height: 50px;
+
+        :first-child {
+          width: 128px;
+          padding: 16px 0;
+          text-align: center;
+          font-size: 13px;
+          border-right: 1px solid #CCCCCC;
+          background: #FAFAFA 0% 0% no-repeat padding-box;
+        }
+
+        :last-child {
+          width: 100%;
+          padding: 14px 31px;
+        }
+      }
+
+      .minutes-required {
+        border-bottom: 1px solid #CCCCCC;
+      }
+
+      .custom-td {
+        padding-left: 0;
+      }
+    }
+
+    .action {
+      margin-top: 17px;
+      text-align: center;
+      height: 30px;
+
+      .btn-deni, .btn-approval {
+        height: 100%;
+        display: inline-block;
+        width: 70px;
+        text-align: center;
+      }
+
+      .btn-deni {
+        background: #FF0000 0% 0% no-repeat padding-box;
+        border-radius: 3px;
+        color: #FFFFFF;
+        margin-right: 15px;
+      }
+
+      .btn-approval {
+        background: #40AA71 0% 0% no-repeat padding-box;
+        border-radius: 3px;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

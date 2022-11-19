@@ -1,0 +1,159 @@
+#delivery-method {
+  max-width: 692px;
+  margin: 0 auto;
+  background: #FFF;
+  border-radius: 5px;
+
+  .delivery-method {
+    padding: 25px 30px 40px;
+
+    .body {
+      color: #2a3242;
+      header {
+        span {
+          display: block;
+        }
+
+        .title {
+          font-size: 20px;
+          line-height: 30px;
+          margin-bottom: 10px;
+        }
+
+        #sub-title {
+          width: fit-content;
+          margin: 0 auto;
+          text-align: left;
+
+          .sub-title {
+            line-height: 24px;
+            color: #46CB90;
+          }
+
+          span:before {
+            display: inline-block;
+            margin-right: 6px;
+            content: '';
+            border: 3px solid #46CB90;
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            margin-bottom: 4px;
+          }
+        }
+      }
+
+      &__content {
+        margin-top: 35px;
+        .warning {
+          color: #EE3D48;
+        }
+
+        #step1 {
+          span {
+            display: block;
+          }
+
+          .step1 {
+            color: #46CB90;
+            margin-bottom: 5px;
+          }
+
+          .image-step1 {
+            margin-top: 5px;
+            object-fit: cover;
+          }
+          .image-step1--sp{
+            display: none;
+          }
+        }
+
+        #step2 {
+          margin-top: 35px;
+
+          span {
+            display: block;
+          }
+
+          .step2 {
+            color: #46CB90;
+            margin-bottom: 5px;
+          }
+
+          .image-step2 {
+            margin-top: 5px;
+            object-fit: cover;
+          }
+
+          .image-step2--sp{
+            display: none;
+          }
+
+          .mb-20 {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width:414px) {
+    width: calc(100% - 20px);
+
+    .delivery-method{
+      padding: 20px 10px;
+
+      .body{
+        .text-center{
+          .title{
+            margin-bottom: 5px;
+          }
+        }
+
+        &__content{
+          margin-top: 30px;
+
+          #step1{
+            span{
+              white-space: normal !important;
+              display: inline;
+            }
+            .image-step1{
+              display: none;
+            }
+            .image-step1--sp{
+              display: block;
+              margin: 10px auto 0;
+              width: 100%;
+              max-width:310px ;
+            }
+          }
+          
+          #step2{
+            margin-top: 30px;
+            .image-step2{
+              display: none;
+              
+            }
+            
+            .image-step2--sp{
+              display: block;
+              margin: 10px auto 0;
+              width: 100%;
+              max-width: 310px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width:320px) {
+    .image-step1--sp{
+      width: 100%;
+    }
+    .image-step2--sp{
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,224 @@
+.layout-content {
+  padding-top: 0;
+  background: #E5E5E5;
+  color: #2A3242;
+}
+
+.banner-usage-fee {
+  width: 100%;
+  min-height: 546px;
+  background-image: url("/assets/img/usage_fee/banner_usage_fee (1).png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  //&__content-outline {
+  //  width: 500px;
+  //  position: absolute;
+  //  background: #46CB90;
+  //  height: 34px;
+  //  top: 40%;
+  //  left: 50%;
+  //  -webkit-transform: translate(-50%, -50%);
+  //  transform: translate(-50%, -50%);
+  //
+  //  &__text {
+  //    position: relative;
+  //
+  //    span {
+  //      font-size: 44px;
+  //      white-space: nowrap;
+  //      position: absolute;
+  //      top: -25px;
+  //      left: 14px;
+  //      color: #FFFFFF;
+  //    }
+  //  }
+  //}
+}
+
+.usage-fee-main {
+  .none-pc {
+    display: none;
+  }
+
+  margin-top: 30px;
+  //margin-bottom: 91px;
+
+  &__title-page {
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__outline {
+    background: #FFFFFF;
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 52px 115px;
+
+    &__warring-note {
+      color: #EE3D48;
+      font-weight: 300;
+      font-size: 18px;
+      display: flex;
+      max-width: 580px;
+      margin: 36px auto 0 auto;
+
+      span {
+        font-size: 18px;
+      }
+    }
+
+    &__paragraph {
+      display: flex;
+      margin-bottom: 20px;
+
+      &__icon {
+        max-width: 35px;
+        max-height: 35px;
+        margin-right: 15px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &__content {
+        .holding-period-app {
+          display: none;
+        }
+
+        .text-red-line {
+          color: #EE3D48;
+        }
+
+        .title {
+          font-size: 26px;
+
+          span {
+            font-weight: 300;
+          }
+
+          strong {
+            color: #EE3D48;
+            font-size: 26px;
+            font-weight: 600;
+          }
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 14px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-usage-fee {
+    width: 100%;
+    min-height: 156px;
+
+    //&__content-outline {
+    //  width: 264px;
+    //  height: 18px;
+    //
+    //  &__text {
+    //    span {
+    //      top: -16px;
+    //      left: 2px;
+    //      font-size: 24px;
+    //    }
+    //  }
+    //}
+  }
+  .usage-fee-main {
+    .none-pc {
+      display: block;
+    }
+
+    margin-top: 20px;
+
+    &__title-page {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #2A3242;
+    }
+
+    &__outline {
+      padding: 10px;
+      border-radius: 0;
+
+      &__warring-note {
+        margin-left: 10px;
+      }
+
+      &__paragraph {
+        margin-bottom: 10px;
+
+        &__icon {
+          margin-right: 9px;
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        &__content {
+          .holding-period-title {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .holding-period {
+            display: none;
+          }
+
+          .holding-period-app {
+            display: block;
+          }
+
+          .title-livestream {
+            strong {
+              white-space: nowrap;
+            }
+          }
+
+          .lh-app {
+            line-height: 24px;
+
+            span {
+              white-space: nowrap;
+            }
+          }
+
+          .coin-sales {
+            span {
+              white-space: nowrap;
+            }
+          }
+
+          .title {
+            font-size: 20px;
+
+            strong {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .banner-usage-fee {
+    height: 710px;
+    background-size: cover;
+  }
+}

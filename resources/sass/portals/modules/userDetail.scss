@@ -1,0 +1,98 @@
+.user-detail {
+    padding: 0 25px;
+    label {
+        margin-bottom: 0;
+        font-size: 18px;
+        line-height: 24px;
+        color: #43425D;
+    }
+    &__back-list {
+        font-size: 15px;
+        line-height: 20px;
+        width: 105px;
+        height: 40px;
+        border: 1px solid #CCCCCC;
+        background-color: #FAFAFA;
+        color: #666666;
+    }
+    .wrap-2 {
+        margin-top: 14px;
+        // min-height: 620px;
+        width: calc((100% / 2) - 17px);
+        background-color: #FFFFFF;
+        box-shadow: #0000001A 0px 0px 10px;
+        border-radius: 5px;
+        padding: 17px 0 0 0;
+        .label-common {
+            margin-left: 29.5px;
+            font-size: 15px;
+            line-height: 20px;
+            color: #333333;
+        }
+        .horizontal-line {
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-color: #CCCCCC;
+            margin-top: 18px;
+        }
+        .content {
+            padding: 29px 30px;
+            &__wrap {
+                margin-bottom: 40px;
+                font-size: 15px;
+                line-height: 20px;
+                &__label, &__value {
+                    margin-bottom: 0;
+                    font-size: 15px;
+                }
+                &__value {
+                    display: flex;
+                    align-items: center;
+                    word-break: break-word;
+                }
+            }
+            &__wrap:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .wrap-1 {
+        margin-top: 30px;
+        width: 100%;
+        background-color: #FFFFFF;
+        box-shadow: #0000001A 0px 0px 10px;
+        border-radius: 5px;
+        padding: 17px 0 0 0;
+        .label-common {
+            margin-left: 29.5px;
+            font-size: 15px;
+            line-height: 20px;
+            color: #333333;
+        }
+        .horizontal-line {
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-color: #CCCCCC;
+            margin-top: 18px;
+        }
+        .content {
+            padding: 29px 30px;
+            &__wrap {
+                margin-bottom: 40px;
+                font-size: 15px;
+                line-height: 20px;
+                &__label, &__value {
+                    margin-bottom: 0;
+                    margin-right: -12px;
+                    font-size: 15px;
+                    line-height: 24px;
+                }
+            }
+            &__wrap:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

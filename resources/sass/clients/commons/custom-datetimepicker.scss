@@ -1,0 +1,22 @@
+.jquery-datetime-picker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #CCCCCC;
+  height: 30px;
+  width: 199px;
+  position: relative;
+  border-radius: 3px;
+  margin-right: 20px;
+  .datetimepicker {
+    border: none !important;
+    background: url('/assets/img/icons/icon-calender.svg') no-repeat right center;
+    background-position: 170px;
+    cursor: pointer;
+  }
+  .datetimepicker-icon {
+    padding: 0 10px 0 5px;
+    position: absolute;
+    right: 0;
+  }
+}

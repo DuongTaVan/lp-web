@@ -1,0 +1,243 @@
+.sale-detail {
+  &__title {
+    p {
+      margin: 22px 25px;
+      font-size: 18px;
+      line-height: 24px;
+      color: #43425D;
+    }
+  }
+
+  &__content {
+    padding-bottom: 20px;
+    background: #FFFFFF;
+    margin: 0 29px 30px 25px;
+    border-radius: 5px;
+
+    #form-search {
+      padding: 18px 0 0 30px;
+    }
+
+    .list-option--top {
+      font-size: 12px;
+
+      input {
+        height: 40px;
+        border: 1px solid #CCCCCC;
+        border-radius: 3px;
+      }
+
+      p {
+        margin-top: 10px;
+        margin-bottom: 0;
+        color: #333333;
+      }
+
+      input {
+        padding: 0 10px;
+      }
+
+      select {
+        padding: 0 20px 0 10px;
+      }
+
+      .user-id {
+        margin-right: 20px;
+        width: 134px;
+      }
+    }
+
+    .list-option--bottom {
+      font-size: 12px;
+
+      .type {
+        width: 284px;
+        height: 30px;
+        border: 1px solid #CCCCCC;
+      }
+
+      .name {
+        width: 371px;
+        height: 30px;
+        border: 1px solid #CCCCCC;
+      }
+
+      input {
+        height: 30px;
+        border: 1px solid #CCCCCC;
+        border-radius: 3px;
+        padding: 0 10px;
+      }
+
+      margin-bottom: 5px;
+      position: relative;
+
+      p {
+        margin-top: 10px;
+        margin-bottom: 0;
+        color: #333333;
+      }
+
+      .user_id {
+        width: 135px;
+      }
+
+      .btn-search {
+        width: 60px;
+        height: 30px;
+        margin-left: 40px;
+        position: absolute;
+        bottom: 0;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        border-radius: 3px;
+        font-size: 15px;
+        background-color: #1874C4;
+        border-color: #1874C4;
+
+        &:active {
+          background-color: #1874C4 !important;
+          border-color: #1874C4 !important;
+        }
+
+        &:hover {
+          background-color: #1874C4 !important;
+          border-color: #1874C4 !important;
+        }
+      }
+    }
+
+    .table-content {
+      margin-bottom: 10px;
+      padding: 0 30px;
+
+      th {
+        font-size: 13px;
+        height: 50px;
+        border-top: solid 3px #CCCCCC;
+        border-bottom: solid 3px #CCCCCC;
+        border-right: solid 2px #CCCCCC;
+
+        &:last-child {
+          border-right: solid 1px #CCCCCC;
+        }
+      }
+
+      tr {
+        &:last-child {
+          td {
+            border-bottom: solid 1px #CCCCCC;
+            border-top: solid 3px #CCCCCC;
+          }
+        }
+
+        td {
+          border-right: solid 2px #CCCCCC;
+
+          &:last-child {
+            border-right: solid 1px #CCCCCC;
+          }
+        }
+      }
+
+      .btn_withdrawal, .btn_sendmail {
+        width: 112px;
+        height: 30px;
+        border: solid 1px #CCCCCC;
+        background-color: #FFFFFF;
+        font-size: 13px;
+        color: #666666;;
+      }
+
+      .record {
+        margin-bottom: 10px;
+
+        .custom-select {
+          width: 80px;
+          height: 30px;
+          margin-right: 10px;
+        }
+
+        span {
+          font-size: 15px;
+          color: #333333;
+        }
+      }
+
+      .table {
+        margin-bottom: unset;
+
+        .withdrawal-list-info {
+          td {
+            vertical-align: middle;
+            color: #333333;
+            font-size: 15px;
+          }
+        }
+
+        .w-140 {
+          min-width: 140px !important;
+        }
+
+        .w-228 {
+          min-width: 228px;
+        }
+
+        .w-347 {
+          min-width: 347px;
+        }
+
+        .w-180 {
+          min-width: 180px;
+        }
+
+        .w-148 {
+          min-width: 148px;
+        }
+
+        .w-213 {
+          min-width: 213px;
+        }
+
+        .box_title {
+          padding-bottom: 33px;
+
+          p {
+            color: #333333;
+            margin: unset;
+            font-size: 15px;
+          }
+        }
+
+        .modal-footer {
+          border-top: unset;
+
+          .button--left {
+            height: 50px;
+            background-color: #FFFFFF;
+            color: #000000;
+            border-radius: 3px;
+            border: solid 1px #CCCCCC;
+            width: 150px;
+            font-size: 15px;
+          }
+
+          .button--right {
+            height: 50px;
+            background-color: #1874C4;
+            color: #FFFFFF;
+            border-radius: 3px;
+            border: solid 1px #CCCCCC;
+            width: 150px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .table__footer {
+      margin: 0 30px 10px 30px;
+    }
+  }
+}

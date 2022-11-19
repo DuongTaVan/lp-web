@@ -1,0 +1,23 @@
+.privacy-policy{
+    .footer-common{
+        &__title{
+            &--text{
+                @media (max-width: 414px) {
+                    text-align: center;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+                
+            }
+        }
+    }
+    .content{
+        padding-top: 30px;
+        padding-bottom: 93px;
+    }
+    .list--block{
+        &>li{
+            display: block;
+        }
+    }
+}

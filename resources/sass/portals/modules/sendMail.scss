@@ -1,0 +1,107 @@
+#send-mail {
+  .modal-content {
+    border: 1px solid;
+    border-radius: 0.3rem;
+    outline: 0;
+    background-color: #fff;
+    border-color: rgba(0, 0, 21, 0.2);
+    .modal-body {
+      text-align: center;
+    }
+    .modal-footer {
+      button {
+        background-color: #0089FF !important;
+        border-color: #ccc !important;
+        padding: 10px 35px;
+      }
+    }
+  }
+  #exampleModalCenter {
+    background-color: rgba(115, 115, 115, .5);
+  }
+  width: 100%;
+  height: 100vh;
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+  opacity: 1;
+  .form {
+    width: 500px;
+    height: 350px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #0000001a;
+    border-radius: 5px;
+    opacity: 1;
+    &-send-mail {
+      padding: 51px 75px 55px 75px;
+
+      &__label {
+        font-size: 20px;
+        color: $black;
+        padding-bottom: 19px;
+        line-height: 27px;
+      }
+      &__description {
+        font-size: 13px;
+        color: #333333;
+        padding-bottom: 15px;
+      }
+      &__wrap {
+        padding: 10px 0;
+        #email-error {
+          font-size: 13px;
+          color: #ef4f4f;
+          margin-top: 10px;
+        }
+        .mail-error-server {
+          font-size: 13px;
+          color: #ef4f4f;
+        }
+      }
+      &__prepend {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #cccccc;
+        border-right: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #eeeeee 0% 0% no-repeat padding-box;
+        border-radius: 3px 0px 0px 3px;
+        &__icon {
+          display: flex;
+        }
+      }
+      &__input {
+        height: 40px;
+        box-shadow: none;
+        width: calc(100% - 40px);
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border: 1px solid #cccccc;
+        padding-left: 13px;
+        outline: none;
+        &::placeholder {
+          color: #999999;
+          font-size: 15px;
+        }
+      }
+      &__submit {
+        margin-top: 20px;
+        &-btn {
+          width: 100px;
+          height: 40px;
+          background: #1874c4 0% 0% no-repeat padding-box;
+          border: none;
+          border-radius: 3px;
+          color: $white;
+          font-size: 15px;
+        }
+        &-forgot {
+          display: block;
+          font-size: 13px;
+          color: #1874c4;
+          margin-right: 13px;
+        }
+      }
+    }
+  }
+}

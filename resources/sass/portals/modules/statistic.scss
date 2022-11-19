@@ -1,0 +1,314 @@
+.statistic {
+  &__title {
+    p {
+      margin: 22px 25px;
+      font-size: 18px;
+      line-height: 24px;
+      color: #43425D;
+    }
+  }
+
+  &__content {
+    padding-bottom: 20px;
+    background: #FFFFFF;
+    margin: 0 29px 30px 25px;
+
+    #form-search {
+      padding: 18px 0 0 30px;
+    }
+
+    .list-option--top {
+      font-size: 12px;
+
+      input {
+        height: 40px;
+        border: 1px solid #CCCCCC;
+        border-radius: 3px;
+      }
+
+      p {
+        margin-top: 10px;
+        margin-bottom: 0;
+        color: #333333;
+      }
+
+      input {
+        padding: 0 10px;
+      }
+
+      select {
+        padding: 0 20px 0 10px;
+      }
+
+      .user-id {
+        margin-right: 20px;
+        width: 134px;
+      }
+    }
+
+    .list-option--bottom {
+      font-size: 12px;
+
+      input {
+        height: 30px;
+        border: 1px solid #CCCCCC;
+        border-radius: 3px;
+        padding: 0 10px;
+      }
+
+      margin-bottom: 5px;
+      position: relative;
+
+      p {
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+
+      .type {
+        height: 30px;
+        min-width: 284px;
+        border: solid 1px #CCCCCC;
+      }
+
+      .name {
+        width: 371px;
+        border: solid 1px #CCCCCC;
+        height: 30px;
+      }
+
+      .btn-search {
+        width: 60px;
+        height: 30px;
+        margin-left: 40px;
+        position: absolute;
+        bottom: 0;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        border-radius: 3px;
+        font-size: 15px;
+        background-color: #1155CC;
+        border-color: #1874C4;
+
+        &:active {
+          background-color: #1874C4 !important;
+          border-color: #1874C4 !important;
+        }
+
+        &:hover {
+          background-color: #1874C4 !important;
+          border-color: #1874C4 !important;
+        }
+      }
+    }
+
+    .table-content {
+      margin-bottom: 10px;
+      padding: 0 30px;
+
+      th {
+        font-size: 13px;
+        height: 50px;
+        // border-top: solid 3px #CCCCCC;
+        // border-bottom: solid 3px #CCCCCC;
+        // border-right: solid 2px #CCCCCC;
+
+        &:last-child {
+          border-right: solid 1px #CCCCCC;
+        }
+      }
+
+      tr {
+        &:last-child {
+          td {
+            border-bottom: solid 1px #CCCCCC;
+            border-top: solid 2px #CCCCCC;
+          }
+        }
+
+        td {
+          border-right: solid 2px #CCCCCC;
+
+          &:last-child {
+            border-right: solid 1px #CCCCCC;
+          }
+        }
+      }
+
+      .tr-holiday {
+        background-color: #FFD9D0;
+      }
+
+      .td-holiday {
+        background-color: #FFD9D0 !important;
+      }
+
+      #date {
+        height: 50px;
+        min-width: 179px;
+        border-bottom: 1px solid #cccc;
+      }
+
+      #price {
+        min-width: 228px;
+        border-right: 2px solid #cccc;
+      }
+
+      #YonY {
+        min-width: 123px;
+        border-right: 2px solid #ccc;
+      }
+    }
+
+    .btn_withdrawal, .btn_sendmail {
+      width: 112px;
+      height: 30px;
+      border: solid 1px #CCCCCC;
+      background-color: #FFFFFF;
+      font-size: 13px;
+      color: #666666;;
+    }
+
+    .record {
+      margin-bottom: 10px;
+
+      .custom-select {
+        width: 80px;
+        height: 30px;
+        margin-right: 10px;
+      }
+
+      span {
+        font-size: 15px;
+      }
+    }
+
+    .table {
+      margin-bottom: unset;
+      max-height: 600px;
+      height: 100%;
+
+      .fixed {
+        background-color: white;
+        position: sticky;
+      }
+
+      .pd-0 {
+        padding: 0;
+      }
+
+      .fixed-topt {
+        top: 0;
+        z-index: 1;
+      }
+
+      .fixed-tr {
+        z-index: 2 !important;
+      }
+
+      .fixed-left {
+        left: 0;
+        z-index: 1;
+        padding: 0;
+        border: 0;
+
+        .col-fixed {
+          padding: 0.75rem;
+          outline: 1px solid #CCCCCC;
+          border-right: solid 2px #CCCCCC;
+          border-top: solid 1px #CCCCCC;
+          border-bottom: solid 1px #CCCCCC;
+          width: 100%;
+          height: 100%;
+        }
+
+        .col-fixed-ht {
+          padding: 0.75rem;
+          outline: 1px solid #CCCCCC;
+          border-right: solid 1px #CCCCCC;
+          border-left: solid 1px #CCCCCC;
+          //border-top: solid 1px #CCCCCC;
+          //border-bottom: solid 1px #CCCCCC;
+          width: 100%;
+          height: 100%;
+        }
+
+        .col-fixed-hbt {
+          padding: 0.75rem;
+          outline: 1px solid #CCCCCC;
+          border-right: solid 1px #CCCCCC;
+          //border-top: solid 1px #CCCCCC;
+          border-left: solid 1px #CCCCCC;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .border-bt {
+        padding: 0.75rem;
+        width: 100%;
+        height: 100%;
+        border-bottom: solid 2px #CCCCCC;
+      }
+
+      .border-t {
+        padding: 0.75rem;
+        width: 100%;
+        height: 100%;
+        border-top: solid 1px #CCCCCC;
+        border-bottom: solid 1px #CCCCCC;
+      }
+
+      .withdrawal-list-info {
+        td {
+          vertical-align: middle;
+          color: #333333;
+          font-size: 15px;
+        }
+      }
+
+      .box_title {
+        padding-bottom: 33px;
+
+        p {
+          color: #333333;
+          margin: unset;
+          font-size: 15px;
+        }
+      }
+
+      .modal-footer {
+        border-top: unset;
+
+        .button--left {
+          height: 50px;
+          background-color: #FFFFFF;
+          color: #000000;
+          border-radius: 3px;
+          border: solid 1px #CCCCCC;
+          width: 150px;
+          font-size: 15px;
+        }
+
+        .button--right {
+          height: 50px;
+          background-color: #1155CC;
+          color: #FFFFFF;
+          border-radius: 3px;
+          border: solid 1px #CCCCCC;
+          width: 150px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .table__footer {
+    margin: 0 30px 10px 30px;
+  }
+
+  .font-total {
+    font-weight: 600;
+    font-size: 17px;
+  }
+}

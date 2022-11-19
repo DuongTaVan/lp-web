@@ -1,0 +1,113 @@
+.re-send-email {
+    margin: 200px auto 0;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    &__header {
+        padding-top: 30px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        h5 {
+            font-size: 14px;
+            line-height: 21px;
+            color: #2A3242;
+            margin-bottom: 0;
+        }
+        &__btn {
+            position: relative;
+            left: 68px;
+        }
+    }
+    &__body {
+        padding: 23px 33px 30px 33px;
+        &__email {
+            font-size: 16px;
+            line-height: 24px;
+            color: #2A3242;
+            width: 100%;
+            overflow-wrap: break-word;
+            margin-bottom: 27px;
+        }
+        &__option {
+            &-btn {
+                width: 150px;
+                height: 41px;
+                border-radius: 5px;
+                font-size: 14px;
+                line-height: 21px;
+                &--cancel {
+                    border: 1px solid rgba(78, 87, 104, 0.2);
+                    color: #2A3242;
+                    background-color: #FFFFFF;
+                    box-sizing: border-box;
+                    margin-right: 3px;
+                }
+                &--send {
+                    background-color: #46CB90;
+                    border: 1px solid #46CB90;
+                    box-sizing: border-box;
+                    color: #FFFFFF;
+                    margin-left: 3px;
+                }
+            }
+        }
+    }
+}
+// MOBILE
+@media only screen and (max-width: 767px) {
+    .re-send-email {
+        margin: 200px auto 0;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        &__header {
+            padding-top: 30px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            h5 {
+                font-size: 14px;
+                line-height: 21px;
+                color: #2A3242;
+                margin-bottom: 0;
+            }
+            &__btn {
+                position: relative;
+                left: 68px;
+            }
+        }
+        &__body {
+            padding: 23px 36px 30px 36px;
+            &__email {
+                font-size: 16px;
+                line-height: 24px;
+                color: #2A3242;
+                width: 100%;
+                overflow-wrap: break-word;
+                margin-bottom: 27px;
+            }
+            &__option {
+                &-btn {
+                    width: 150px;
+                    height: 41px;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    line-height: 21px;
+                    &--cancel {
+                        border: 1px solid rgba(78, 87, 104, 0.2);
+                        color: #2A3242;
+                        background-color: #FFFFFF;
+                        box-sizing: border-box;
+                        margin-right: 3px;
+                    }
+                    &--send {
+                        background-color: #46CB90;
+                        border: 1px solid #46CB90;
+                        box-sizing: border-box;
+                        color: #FFFFFF;
+                        margin-left: 3px;
+                    }
+                }
+            }
+        }
+    } 
+}

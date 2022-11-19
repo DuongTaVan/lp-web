@@ -1,0 +1,56 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/functions';
+//@import '~bootstrap/scss/bootstrap';
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+$font-path: "/assets/fonts/";
+
+@font-face {
+  font-family: 'Hiragino W3';
+  src: url('#{$font-path}/hiragino-kaku-gothic-pro-w3.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.page-error {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.header__bar img {
+  width: 26px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.header__setting img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.btn-popup {
+  background-color: #1874C4;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #1874C4;
+  border-color: #1874C4;
+}
+
+.page-link {
+  color: #1874C4;
+}
+
+.dp-none {
+  display: none !important;
+}

@@ -1,0 +1,198 @@
+.seller-user-guide {
+  .ml-12px {
+    margin-left: 12px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2A3242;
+    background: #F9FAFB;
+    padding: 5px 0 5px 14px;
+  }
+
+  &__block {
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+
+  &__service-listing {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: #2A3242;
+    background: #E5F0EB;
+    cursor: pointer;
+
+    &__three {
+      cursor: pointer;
+
+      .icon-dropdown-type {
+        transform: rotate(-180deg);
+      }
+
+      .img-rotate {
+        transform: rotate(0deg);
+        transition: 0.5s;
+      }
+    }
+
+    &__left {
+      display: flex;
+
+      &__one {
+        font-weight: 600;
+        font-size: 18px;
+        color: #2A3242;
+      }
+
+      &__two {
+        margin-left: 10px;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      &__three {
+        margin-left: 10px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+      }
+
+    }
+  }
+
+  &__toogle {
+    display: none;
+  }
+
+  &__content {
+    display: flex;
+    padding: 15px 20px;
+    color: #2A3242;
+    background: #F9FAFB;
+
+    .email-down-icon {
+      width: 14px;
+      margin-bottom: 5px;
+    }
+
+    &__service-listing {
+      &__one {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #2A3242;
+      }
+
+      &__right {
+        margin-left: 13px;
+
+        &__content {
+          margin-left: 50px;
+
+          &__green {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            color: #46CB90;
+            margin-left: 15px;
+
+            a {
+              text-decoration: underline;
+              color: #46CB90;
+            }
+          }
+
+          &__black {
+            font-weight: 300;
+            font-size: 14px;
+            color: #2A3242;
+          }
+        }
+
+        &__green {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          color: #46CB90;
+
+          a {
+            text-decoration: underline;
+            color: #46CB90;
+          }
+        }
+
+        &__black {
+          font-weight: 300;
+          font-size: 14px;
+          color: #2A3242;
+
+          //.direction-sp {
+          //  display: block;
+          //  //@media (max-width:414px) {
+          //  //  display: flex;
+          //  //  flex-direction: column;
+          //  //  word-break: keep-all;
+          //  //}
+          //}
+        }
+
+        &__danger {
+          font-weight: 300;
+          font-size: 14px;
+          color: #EE3D48;
+        }
+      }
+
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .seller-user-guide {
+    .text-posting-reviews {
+      margin-left: 5px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .seller-user-guide {
+    .text-posting-reviews {
+      margin-left: 25px;
+      white-space: nowrap;
+    }
+
+    &__service-listing {
+      padding: 13px 10px;
+
+      &__left {
+        &__one, &__two {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+        }
+      }
+    }
+
+    &__content {
+      padding: 10px;
+
+      &__service-listing {
+
+
+        &__one {
+          font-size: 12px;
+        }
+
+        &__right {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}

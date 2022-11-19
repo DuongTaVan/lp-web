@@ -1,0 +1,74 @@
+@import "commons";
+@import "commons/table";
+@import "commons/custom-datetimepicker";
+@import "commons/alert";
+@import "modules/footer-common";
+@import "modules/login";
+@import "modules/register";
+@import "modules/header-common";
+@import "modules/reset-password";
+@import "modules/register-less-twenty-year-old";
+@import "modules/send-authentication-email";
+@import "modules/register-complete";
+@import "modules/order";
+@import "modules/studentOrder";
+@import "modules/header-payment";
+@import "teacher_page";
+@import "modal_login";
+@import "modules/teacher/popup_check_buyer";
+@import "notice";
+@import "home";
+@import "search";
+@import "modules/mypage/dasboard";
+@import "modules/sub-course-detail";
+@import "modules/auth/authentication-email.scss";
+@import "modules/auth/authentication-email.scss";
+@import "modules/auth/re-send-authentication-email-modal.scss";
+@import "modules/teacher-register";
+@import "modules/orderView";
+@import "modules/mypage/purchase";
+@import "modules/mypage/livestream";
+@import "change_background";
+@import "teacher-livestream";
+@import "teacher_join_course";
+// teacher
+@import "modules/teacher/mypage-teacher.scss";
+// teacher register setting
+@import "modules/teacher/teacher_register_setting/info_register.scss";
+@import "popup-rank";
+//guidelines
+@import "modules/teacher/guidelines.scss";
+//teacher dashboard
+@import "modules/teacher/teacher_dashboard.scss";
+
+@import "modules/lappi-slider.scss";
+@import "plugins/swiper-bundle.min.css";
+//@import "plugins/toastr.min.css";
+@import "plugins/flatpickr.min.css";
+
+.btn-disabled {
+  pointer-events: none;
+}
+
+#subCourseFree {
+  pointer-events: none;
+}
+
+.card__content__rate__rating {
+  margin-top: -6px;
+}
+
+.list-star li {
+  margin-right: 4px;
+}
+
+.color-default {
+  color: #000000;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}

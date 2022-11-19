@@ -1,0 +1,46 @@
+.alert-success {
+  display: none;
+}
+
+.alert-success.show {
+  display: block;
+}
+
+#toast-container {
+  .toast-info {
+    background-size: 0 !important;
+    background-color: #3C9EFF;
+    max-width: 486px;
+    &:hover {
+      -webkit-box-shadow: none !important;
+      background-size: 0 !important;
+      background-color: #3C9EFF;
+      border: none;
+    }
+    .toast-message {
+      margin-left: -28px;
+      //margin-top: 11px;
+    }
+    .toast-close-button {
+      //margin-top: 13px;
+      margin-right: 12px;
+    }
+  }
+  .toast-error {
+    background-size: 0 !important;
+    max-width: 486px;
+    &:hover {
+      -webkit-box-shadow: none !important;
+      background-size: 0 !important;
+      border: none;
+    }
+    .toast-message {
+      margin-left: -28px;
+      margin-top: 11px;
+    }
+    .toast-close-button {
+      margin-top: 13px;
+      margin-right: 12px;
+    }
+  }
+}

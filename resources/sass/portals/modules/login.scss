@@ -1,0 +1,87 @@
+#login {
+  width: 100vw;
+  height: 100vh;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  .form {
+    margin: 0 auto;
+    width: 450px;
+    height: 320px;
+    box-shadow: #0000001A 0 0 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    &-login {
+      height: 100%;
+      padding: 46px 50px 50px;
+
+      .input-group:not(:first-child) {
+        margin-top: 20px;
+      }
+
+      &__label {
+        color: $black;
+        font-size: 20px;
+        letter-spacing: 0px;
+        opacity: 1;
+        margin-bottom: 27px;
+        line-height: 27px;
+      }
+      &__wrap {
+      }
+      &__prepend {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #CCCCCC;
+        border-right: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #EEEEEE 0% 0% no-repeat padding-box;
+        border-radius: 3px 0px 0px 3px;
+        &__icon {
+          display: flex;
+        }
+      }
+      &__input {
+        height: 40px;
+        line-height: 40px;
+        box-shadow: none;
+        width: calc(100% - 40px);
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border: 1px solid #CCCCCC;
+        padding-left: 13px;
+        outline: none;
+        &::placeholder {
+          color: #999999;
+          font-size: 15px;
+        }
+      }
+
+      input::-ms-reveal, input::-ms-clear {
+        display: none;
+      }
+
+      &__submit {
+        margin-top: 30px;
+        &-btn {
+          width: 100px;
+          height: 40px;
+          background: #1874C4 0% 0% no-repeat padding-box;
+          border: none;
+          border-radius: 3px;
+          color: $white;
+          font-size: 15px;
+        }
+        &-forgot {
+          display: block;
+          font-size: 13px;
+          color: #1874C4;
+        }
+      }
+      .error {
+        color: #E51010;
+        font-size: 12px;
+      }
+    }
+  }
+}

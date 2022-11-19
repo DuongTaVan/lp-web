@@ -1,0 +1,483 @@
+.box-notification-trans-list {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px 60px 30px 60px;
+
+  .box-notification-trans-btn-create {
+    float: right;
+    margin-left: auto;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    width: 100px;
+    height: 40px;
+    opacity: 1;
+    letter-spacing: 0px;
+    color: #666666;
+  }
+
+  .seach-form {
+    &__title {
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 3px;
+      color: #333333;
+    }
+
+    .input-title {
+      border-radius: 3px;
+      border: 1px solid #CCCCCC;
+      width: 301px;
+      height: 36px;
+      padding-left: 10px;
+      outline: none;
+      box-shadow: none;
+      margin-right: 40px;
+    }
+  }
+
+  .search-button {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 36px;
+    border-radius: 3px;
+    background-color: #1155CC;
+    font-size: 15px;
+  }
+
+  .btn-create-box-notification {
+    margin-bottom: -20px;
+  }
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 22px;
+    margin-top: 12px;
+    color: #43425D;
+  }
+
+  #select-per-page {
+    color: #333333;
+    font-size: 15px;
+  }
+
+  .card {
+    background-color: $white;
+    padding: 30px;
+    padding-top: 28px;
+    box-shadow: 0 0 10px #0000001A;
+  }
+
+  hr {
+    margin: 0 -30px;
+    margin-top: 20px;
+  }
+
+  .record {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    &__select {
+      margin-right: 10px;
+      width: 80px;
+      height: 30px;
+      box-shadow: none;
+    }
+
+    span {
+      color: #333333;
+    }
+  }
+
+  table, td, th {
+    border: 1px solid #CCCCCC;
+    border-collapse: collapse;
+  }
+
+  td, th {
+    padding: 17px 20px;
+    color: #333333;
+    vertical-align: middle;
+    line-break: anywhere;
+  }
+
+  .date-wrapper, .delivered-wrapper {
+    min-width: 140px;
+    max-width: 228px;
+    height: 50px;
+  }
+
+  .to_type-wrapper, .option-wrapper {
+    min-width: 115px;
+    max-width: 159px;
+  }
+
+  .title-wrapper {
+    max-width: 500px;
+    min-width: 500px;
+
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  table {
+    width: 100%;
+
+    th {
+      font-size: 13px;
+      height: 50px;
+      border-top: solid 3px #CCCCCC;
+      border-bottom: solid 3px #CCCCCC;
+      border-right: solid 2px #CCCCCC;
+
+      &:last-child {
+        border-right: solid 1px #CCCCCC;
+      }
+    }
+
+    tr {
+      &:last-child {
+        td {
+          border-bottom: solid 1px #CCCCCC;
+        }
+      }
+
+      td {
+        border-right: solid 2px #CCCCCC;
+
+        &:last-child {
+          border-right: solid 1px #CCCCCC;
+        }
+      }
+    }
+
+  }
+
+  &__table {
+    margin-bottom: 15px;
+    overflow-x: scroll;
+
+    i {
+      color: #BCBCCB;
+      opacity: 0.5;
+      cursor: pointer;
+    }
+
+    i.active {
+      color: #111111;
+      opacity: 1;
+    }
+
+    .fields {
+      font-size: 13px;
+    }
+
+    .box-notification-trans-info {
+      td {
+        font-size: 15px;
+        padding: 0px 20px;
+      }
+    }
+
+    .box-notification-trans-btn-detail {
+      border: 1px solid #CCCCCC;
+      outline: none;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border-radius: 3px;
+      width: 70px;
+      height: 30px;
+      font-size: 13px;
+    }
+  }
+
+  .table__footer {
+    &__text {
+      font-size: 13px;
+      color: #333333;
+    }
+
+    &__pagination {
+      li.active {
+        background-color: #1874C4;
+      }
+    }
+  }
+}
+
+@media (max-width: 1800px) {
+  .box-notification-trans-list__table {
+    overflow-x: scroll;
+  }
+}
+
+.box-notification-trans-create {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px 60px 30px 60px;
+
+  .error {
+    color: #ef4f4f;
+  }
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 22px;
+    color: #43425D;
+  }
+
+  &__action {
+    float: right;
+    margin-left: auto;
+  }
+
+  &__btn-create {
+    background: #0089FF 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    width: 150px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 15px;
+    clear: both;
+  }
+
+  &__back {
+    width: 98px;
+    height: 28px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #666666;
+    padding: 8px 17px;
+    margin-right: 12px;
+    background-color: #FAFAFA;
+
+    &:hover {
+      text-decoration: none;
+      color: #666666;
+    }
+  }
+
+  .card {
+    background-color: $white;
+    padding: 30px;
+    padding-top: 20px;
+    box-shadow: 0 0 10px #0000001A;
+  }
+
+  &__form {
+
+    form {
+      max-width: 790px;
+    }
+    .box-notification-trans-create-select-to_type {
+      margin-top: 7px;
+
+      .select-to_type {
+        width: 175px;
+        height: 36px;
+        color: #333333;
+        box-shadow: none;
+        outline: none;
+      }
+
+      .label-title {
+        font-size: 13px;
+        line-height: 17px;
+        margin-bottom: 6px;
+      }
+    }
+
+    .box-notification-trans-create-form-group {
+      margin-top: 27px;
+      overflow: hidden;
+
+      p {
+        margin: 0 0 5px 0;
+        padding: 0;
+        font-size: 13px;
+        color: #333333;
+      }
+
+      .input-title {
+        width: 100%;
+        height: 36px;
+        border: 1px solid #CCCCCC;
+        border-radius: 3px;
+        padding: 0 10px;
+        outline: none;
+      }
+
+      .input-body {
+        width: 1000px;
+        height: 329px;
+        resize: none;
+        border: 1px solid #CCCCCC;
+        border-radius: 3px;
+        padding: 10px;
+        outline: none;
+      }
+
+      .datetimepicker input {
+        width: 210px;
+        height: 40px;
+        border: 1px solid #CCCCCC;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-left: none;
+        font-size: 15px;
+        padding-left: 20px;
+        outline: none;
+      }
+
+      .custom-calendar {
+        border: 1px solid #CCCCCC;
+        border-radius: 3px 0px 0px 3px;
+        width: 46px;
+        height: 40px;
+        background-color: #EEEEEE;
+      }
+    }
+  }
+}
+
+.box-notification-trans-detail {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px 60px 30px 60px;
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #43425D;
+  }
+
+  .fields-title {
+    font-size: 13px;
+    color: #333333;
+  }
+
+  .card {
+    background-color: $white;
+    padding: 30px;
+    padding-top: 20px;
+    box-shadow: 0 0 10px #0000001A;
+  }
+
+  &__content {
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box-notification-trans-detail {
+      &__body {
+        margin-top: 40px;
+      }
+
+      &__schedule {
+        margin-top: 100px;
+      }
+
+      &__body {
+        div {
+          //width: 1161px;
+        }
+      }
+    }
+
+    .fields-title-content {
+      font-size: 15px;
+      //width: 1161px;
+      color: #333333;
+
+      p {
+        font-weight: 300;
+      }
+
+      strong {
+        font-weight: 600;
+      }
+
+      ul {
+        li {
+          list-style: inside;
+        }
+      }
+    }
+  }
+
+  &__action {
+    float: right;
+    margin-left: auto;
+
+    .box-notification-trans-detail-back {
+      width: 105px;
+      height: 40px;
+      border: 1px solid #CCCCCC;
+      border-radius: 3px;
+      font-size: 15px;
+      color: #666666;
+      padding: 10px 15px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// box-notification ck-editor
+.ck.ck-editor {
+  border: 1px solid #cccc !important;
+  border-radius: 5px !important;
+}
+
+.ck-editor__main {
+  max-width: 1000px;
+  height: 291px;
+  border-color: #ECECEC;
+}
+
+.ck-toolbar {
+  background: #FFFFFF !important;
+  border: 1px solid #ECECEC !important;
+  border-bottom-right-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+  border-top: none !important;
+}
+
+.ck-reset {
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 1000px;
+}
+
+.ck-content {
+  height: 100%;
+  border: 1px solid #CCCCCC !important;
+  border-top-right-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+  border-bottom: none !important;
+  font-size: 14px;
+  color: #2A3242;
+
+  li {
+    list-style: unset;
+    margin-left: 15px;
+  }
+
+  p {
+    font-weight: normal !important;
+  }
+
+  strong {
+    font-weight: bolder !important;
+  }
+}
+
+.ck-editor__editable:not(.ck-focused) {
+  border-color: transparent !important;
+}

@@ -1,0 +1,27 @@
+$font-path: "/assets/fonts/";
+
+//@font-face {
+//  font-family: 'Hiragino W3';
+//  src: url('#{$font-path}/hiragino-kaku-gothic-pro-w3.otf');
+//}
+@font-face {
+  font-family: 'Hiragino Kaku Gothic ProN';
+  src: url('#{$font-path}/Hiragino Kaku Gothic ProN W3.otf');
+}
+
+* {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.f-w6 {
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+b, strong {
+  -webkit-font-smoothing: antialiased;
+}
+
+.f-w3 {
+  font-weight: 300;
+}

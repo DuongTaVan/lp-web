@@ -1,0 +1,334 @@
+.teacher-guide {
+  .none-pc {
+    display: none;
+  }
+
+  .word-wrap-sp {
+    display: none;
+    @media (max-width: 414px) {
+      display: block;
+    }
+  }
+
+  .hidden-pc {
+    display: none;
+    @media (max-width: 414px) {
+      display: block;
+    }
+  }
+
+
+  background: #E5E5E5;
+  padding-bottom: 56px;
+
+  .email-down-icon {
+    width: 14px;
+    margin-bottom: 5px;
+  }
+
+  &__block {
+    padding: 30px 0;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+
+    &__title {
+      &__text {
+        font-weight: 600;
+        font-size: 36px;
+        color: #2A3242;
+      }
+
+      &__tag {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2px;
+
+        &__text {
+          height: 3px;
+          background: #46CB90;
+          border-radius: 5px;
+          width: 100%;
+        }
+      }
+
+
+    }
+
+  }
+
+  &__content {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 46px 35px 19px;
+    background: #FFFFFF;
+    border-radius: 5px;
+
+    &__block {
+      text-align: center;
+
+
+      &__title {
+        font-weight: 600;
+        font-size: 20px;
+        color: #2A3242;
+      }
+
+      &__note {
+        font-weight: 600;
+        font-size: 16px;
+        color: #46CB90;
+        margin-top: 5px;
+      }
+    }
+
+    &__block-two {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 35px;
+
+      &__black {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        color: #2A3242;
+      }
+    }
+
+    &__step {
+      &__one {
+        margin-bottom: 35px;
+
+        &__bold {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          color: #2A3242;
+        }
+
+        &__title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          color: #46CB90;
+          margin-bottom: 5px;
+        }
+
+        &__text {
+          color: #2A3242;
+        }
+
+        &__text-danger {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 18px;
+          color: #EE3D48;
+        }
+
+        &__note {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 21px;
+          color: #2A3242;
+
+          span {
+            color: #EE3D48;
+          }
+        }
+
+        .payment-guide {
+          width: 636px;
+          height: 424px;
+          margin: 10px auto;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .course-detail-guide {
+          width: 822px;
+          margin: 10px auto;
+
+          img {
+            //width: 100%;
+          }
+        }
+
+        .course-my-page-guide {
+          width: 820px;
+          height: 370px;
+          margin: 10px auto;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .avatar-student-guide {
+          width: 357px;
+          height: 346px;
+          margin: 10px auto;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        &__avatar {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding-left: 40px;
+          text-align: left;
+
+          img {
+            max-width: 100%;
+          }
+        }
+
+
+        .avatar-student {
+          padding-left: 0;
+          text-align: center;
+        }
+
+        .custom-pl10 {
+          padding-left: 10px;
+        }
+
+        &__avatar-mobile {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .none-mobile {
+    display: none;
+  }
+  .teacher-guide {
+    .none-pc {
+      display: block;
+    }
+
+    .hidden-sp {
+      display: none;
+    }
+
+    &__block {
+      &__title {
+        &__text {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+        }
+      }
+
+      &-two {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__content {
+      margin-top: 10px;
+      width: 394px;
+      padding: 10px;
+
+      &__block {
+        &__note {
+          margin-bottom: 3px;
+
+        }
+      }
+
+      &__step {
+        .teacher-guide-step1 {
+          max-width: 310px;
+          margin: 10px auto;
+        }
+
+        &__one {
+          margin-top: 30px;
+
+          .custom-pl10 {
+            padding-left: 0;
+          }
+
+          &__avatar {
+            display: none;
+          }
+
+          .guide-nine-img-first, .guide-nine-img-second, .guide-eight-img-first, .guide-eight-img-second {
+            margin: 10px auto 30px auto;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .guide-eight-img-second {
+            max-width: 374px;
+          }
+
+          .guide-eight-img-first {
+            max-width: 310px;
+          }
+
+          .guide-nine-img-first {
+            max-width: 357px;
+          }
+
+          .guide-nine-img-second {
+            max-width: 371px
+          }
+
+          &__avatar-mobile {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          &__text-danger {
+            font-size: 14px;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .teacher-guide {
+    &__content {
+      width: 360px;
+
+      &__step {
+        .teacher-guide-step1 {
+          max-width: 310px;
+          margin: 10px auto;
+        }
+
+        &__one {
+
+          &__avatar-mobile {
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

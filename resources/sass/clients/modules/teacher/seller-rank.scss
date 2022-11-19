@@ -1,0 +1,186 @@
+.seller-rank {
+  background-color: #E5E5E5;;
+  padding-bottom: 72px;
+
+  &__banner {
+    width: 100%;
+    height: 546px;
+    background-image: url('/assets/img/clients/teacher/advice-suggestions (1).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    border: unset;
+    min-width: 320px;
+    position: relative;
+
+    &__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      &__background {
+        background: #46CB90;
+        width: 236px;
+        height: 34px;
+        position: relative;
+
+        &__text {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 44px;
+          text-align: center;
+          position: absolute;
+          color: #FFFFFF;
+          min-width: 264px;
+          top: -24px;
+          left: 8px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    &__title-page {
+      font-size: 44px;
+      color: #2A3242;
+      margin-bottom: 30px;
+    }
+
+    &__one-mobile {
+      display: none;
+    }
+  }
+
+
+  &__content-one, &__content-two {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 20px 58px;
+    border-radius: 5px;
+
+    &__title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      text-align: center;
+      color: #2A3242;
+      margin-bottom: 35px;
+    }
+
+    &__img {
+      background-image: url('/assets/img/clients/teacher/group-5800.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      min-width: 320px;
+      height: 350px;
+    }
+  }
+
+  &__content-two {
+    margin-top: 20px;
+
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__img {
+      background-image: url('/assets/img/clients/teacher/group-5808.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      min-width: 320px;
+      height: 370px;
+    }
+
+    &__bottom {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.seller-rank-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 414px) {
+  .seller-rank {
+    padding-bottom: unset;
+
+    &__title {
+      margin-top: 20px;
+      line-height: unset;
+      margin-bottom: 25px;
+
+      &__title-page {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__banner {
+      background-image: url('/assets/img/clients/teacher/feedback-survey-response-advice-suggestions.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-width: 415px;
+      max-height: 156px;
+      position: relative;
+    }
+
+    &__title {
+      &__one, &__two {
+        display: none;
+      }
+
+      &__one-mobile {
+        display: block;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+  }
+  .seller-rank-pc {
+    display: none;
+  }
+  .seller-rank-mobile {
+    display: block;
+    background: none;
+    min-width: 100%;
+    height: 850px;
+
+    img {
+      width: 100%;
+      max-width: 414px;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .seller-rank-mobile {
+    display: block;
+    min-width: 300px;
+    height: 850px;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .seller-rank {
+    &__banner {
+      height: 710px;
+    }
+  }
+}

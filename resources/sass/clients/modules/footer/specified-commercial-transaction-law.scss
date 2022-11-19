@@ -1,0 +1,137 @@
+.commercial-transaction {
+
+  .content {
+    padding-bottom: 80px;
+
+    &__container {
+      display: flex;
+      margin-top: 30px;
+      filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.1));
+      flex-direction: row;
+      @media (max-width: 414px) {
+        background-color: #F1F1F1;
+        filter: unset;
+      }
+    }
+
+    .expand-item {
+      @media (max-width: 414px) {
+        border-radius: 5px;
+        background-color: #fff;
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+        &__content {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .commercial {
+      &-sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-width: 257px;
+        padding: 20px 9px;
+        background: #F6F6F6;
+        border-radius: 5px;
+
+        &__text {
+          padding: 18px 9px;
+          font-weight: bold;
+          color: #2A3242;
+          font-size: 16px;
+          line-height: 16px;
+          cursor: pointer;
+          margin-bottom: 10px;
+
+          &.active {
+            background: rgba(70, 203, 144, 0.26);
+            border-radius: 10px;
+            color: #40B983;
+          }
+
+          &:nth-child(9) {
+            margin-bottom: 60px;
+          }
+
+          &:nth-child(11) {
+            margin-bottom: 90px;
+          }
+
+          &:nth-child(5) {
+            margin-top: 35px;
+          }
+          &:nth-child(6) {
+            margin-top: 25px;
+          }
+
+          &:nth-child(11) {
+            margin-top: 40px;
+          }
+
+          &:nth-child(13) {
+            margin-top: 70px;
+          }
+
+          &:nth-child(15) {
+            margin-top: 23px;
+          }
+        }
+      }
+
+      &-right-content {
+        padding: 20px;
+      }
+    }
+  }
+
+  .group {
+    background: #F1F1F1;
+    border-radius: 10px;
+    padding: 15px 11px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1F2D3D;
+    border: 1px solid #F1F1F1;
+    @media (max-width: 414px) {
+      background-color: unset;
+      border: unset;
+      font-size: 12px;
+      padding: 0;
+      margin: 0;
+    }
+
+    &.active {
+      background-color: #fff;
+      border-color: #46CB90;
+    }
+
+    &__table {
+      display: flex;
+
+      ul {
+        margin-bottom: 0;
+
+        &:first-child {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
+  .mobile-hide {
+    @media (max-width: 414px) {
+      display: none;
+    }
+  }
+
+  .mobile-show {
+    display: none;
+    @media (max-width: 414px) {
+      display: block;
+    }
+  }
+}

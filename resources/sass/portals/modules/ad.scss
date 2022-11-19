@@ -1,0 +1,218 @@
+.ad-list {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px 60px 30px 60px;
+
+  &__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    span {
+      color: #43425D;
+    }
+  }
+
+  #select-per-page {
+    color: #333333 ;
+    font-size: 15px;
+  }
+  .card {
+    background-color: $white;
+    padding: 30px;
+    padding-top: 20px;
+    box-shadow: 0 0 10px #0000001A;
+  }
+  .list-option--top {
+    font-size: 12px;
+    input {
+      height: 40px;
+      border: 1px solid #CCCCCC;
+      border-radius: 3px;
+    }
+    p {
+      margin-top: 10px;
+      margin-bottom: 0;
+      color: #333333;
+    }
+    input {
+      padding: 0 10px;
+    }
+    select {
+      padding: 0 20px 0 10px;
+    }
+    .user-id {
+      margin-right: 20px;
+      width: 134px;
+    }
+    .status {
+      margin-right: 20px;
+      width: 214px;
+      height: 40px;
+    }
+  }
+  .list-option--bottom {
+    font-size: 12px;
+    input {
+      padding: 0 10px;
+    }
+    input {
+      height: 40px;
+      border: 1px solid #CCCCCC;
+      border-radius: 3px;
+    }
+    margin-bottom: 30px;
+    position: relative;
+    p {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+    .golf-area-id {
+      height: 40px;
+      width: 157px;
+      margin-right: 20px;
+    }
+    .plan-id {
+      height: 40px;
+      width: 214px;
+      margin-right: 20px;
+    }
+    .golf-course {
+      width: 327px;
+      margin-right: 20px;
+    }
+    .btn-search {
+      width: 60px;
+      height: 40px;
+      margin-left: 20px;
+      position: absolute;
+      bottom: 0;
+      border: none;
+      box-shadow: none;
+      outline: none;
+      border-radius: 3px;
+      font-size: 15px;
+      background-color: #1874C4;
+      border-color: #1874C4;
+      &:active {
+        background-color: #1874C4 !important;
+        border-color: #1874C4 !important;
+      }
+      &:hover {
+        background-color: #1874C4 !important;
+        border-color: #1874C4 !important;
+      }
+    }
+  }
+  hr {
+    margin: 0 -30px
+  }
+  .record {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    &__select {
+      margin-right: 10px;
+      width: 80px;
+      height: 40px;
+      box-shadow: none;
+    }
+    span {
+      color: #333333;
+    }
+  }
+  table, td, th {
+    border: 1px solid #CCCCCC;
+    border-collapse: collapse;
+  }
+  td, th {
+    padding: 17px 20px
+  }
+  table {
+    width: 2300px;
+    overflow-x: scroll;
+  }
+
+  &__table {
+    margin-bottom: 15px;
+    overflow-x: scroll;
+    .ad_id_column {
+      width: 112px;
+      max-width: 112px;
+    }
+    .user_id_column {
+      width: 120px;
+      max-width: 120px;
+      a {
+        color: #1874C4;
+        text-decoration: none;
+        font-size: 15px;
+      }
+    }
+    .created_at_column {
+      width: 180px;
+      max-width: 180px;
+    }
+    .status_column {
+      width: 200px;
+      max-width: 200px;
+    }
+    .golf_area_id_column {
+      width: 200px;
+      max-width: 200px;
+    }
+    .plan_id_column {
+      width: 220px;
+      max-width: 220px;
+    }
+    .golf_course_column {
+      width: 211px;
+      max-width: 211px;
+    }
+    .scheduled_meeting_datetime_column {
+      width: 179px;
+      max-width: 179px;
+    }
+    .male_participants_column {
+      width: 100px;
+      max-width: 100px;
+    }
+    .female_participants_column {
+      width: 106px;
+      max-width: 106px;
+    }
+    i {
+      color: #BCBCCB;
+      opacity: 0.5;
+    }
+    i.active {
+      color: #111111;
+      opacity: 1;
+    }
+    .fields {
+      font-size: 13px;
+      color: #333333;
+    }
+    .user-info {
+      font-size: 15px;
+      color: #333333;
+    }
+    .btn_user-detail {
+      border: none;
+      outline: none;
+      background-color: #ECECEC;
+      border-radius: 3px;
+      width: 80px;
+      height: 40px;
+      font-size: 13px;
+    }
+  }
+  .table__footer {
+    &__text{
+      font-size: 13px;
+    }
+    &__pagination {
+      li.active {
+        background-color: #1874C4;
+      }
+    }
+  }
+}

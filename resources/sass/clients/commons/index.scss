@@ -1,0 +1,40 @@
+@import "variables";
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/functions';
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+@import 'font-family';
+@import "~jquery-datetimepicker/build/jquery.datetimepicker.min.css";
+@import "custom";
+@import "input";
+@import "link";
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.content-rating {
+  margin-bottom: 0;
+
+  .card__content__rate__rating__list-rating__even {
+    transform: rotateY(180deg);
+    margin-left: -2px;
+  }
+
+  .fa-star-half {
+    font-size: 14px;
+    color: #CCCCCC;
+  }
+
+  .rating-active {
+    color: #FED912;
+  }
+}
+
+input:disabled {
+  background-color: #F9F9F9;
+}
+
+.error {
+  color: #EE3D48;
+  font-size: 10px;
+}

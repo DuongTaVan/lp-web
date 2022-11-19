@@ -1,0 +1,345 @@
+.management_company-page__top {
+  position: relative;
+  width: 100%;
+  padding-bottom: 60px;
+  margin-top: -20px;
+
+  .management_company_banner--pc {
+    width: 100%;
+  }
+
+  .management_company_banner--sp {
+    width: 100%;
+    display: none;
+  }
+
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    align-items: center;
+
+    span {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 48px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #2a3242;
+      margin-bottom: 21px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: left;
+      text-transform: capitalize;
+      color: #2a3242;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 44px;
+      line-height: 66px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #2a3242;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 414px) {
+    padding-bottom: 20px;
+    margin-top: -10px;
+    .management_company_banner--pc {
+      display: none;
+    }
+    .management_company_banner--sp {
+      display: block;
+    }
+    .container {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    .banner-content {
+      padding-top: 20px;
+
+      h2 {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      span {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 8px;
+        line-height: 12px;
+      }
+
+      @media (min-width: 376px) and (max-width: 395px) {
+        span {
+          font-size: 17px;
+        }
+        p {
+          font-size: 7px;
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 375px) {
+    .management_company_banner {
+      height: 37.6vw;
+    }
+    .container {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    .banner-content {
+      padding-top: 20px;
+
+      h2 {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      span {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 7px;
+        line-height: 11px;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    .banner-content {
+      span {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.management_company-page--gray {
+  width: 100%;
+  padding: 33px 0 39px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: #f1f1f1;
+
+  h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 66px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2a3242;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2a3242;
+  }
+
+
+  @media (max-width: 414px) {
+    padding: 20px 9px 19px;
+    h3 {
+      font-size: 19px;
+      line-height: 30px;
+    }
+    span {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+  @media (min-width: 376px) and (max-width: 413px) {
+    span {
+      font-size: 16px;
+    }
+
+  }
+  @media (max-width: 375px) {
+    h3 {
+      font-size: 19px;
+      line-height: 30px;
+    }
+    span {
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+  @media (max-width: 360px) {
+    span {
+      font-size: 15px;
+    }
+  }
+}
+
+.management_company-page-form {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .form-heading {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 66px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2a3242;
+  }
+
+  .form-content {
+    background: #ceffe9;
+    border-radius: 5px;
+    padding: 18px 150px 29px;
+    width: 872px;
+
+    .item {
+      display: flex;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      .item-left {
+        flex-basis: 35%;
+        position: relative;
+        padding-left: 17px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 6px;
+          width: 9px;
+          height: 9px;
+          background-color: #2a3242;
+        }
+
+        span {
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          color: #2a3242;
+        }
+      }
+
+      .item-right {
+        flex: 1;
+
+        .business-content {
+          display: flex;
+          flex-direction: column;
+        }
+
+        span {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 21px;
+          color: #2a3242;
+        }
+
+        .address {
+          margin-top: 10px;
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 414px) {
+    padding-top: 20px;
+    .form-heading {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+    .form-content {
+      width: 100vw;
+      padding: 10px 16px 20px 20px;
+
+      .item {
+        margin-bottom: 6px;
+
+        .item-left {
+          flex-basis: 28.8vw;
+          padding-left: 14px;
+          margin-right: 6px;
+
+          span {
+            font-size: 15px;
+            line-height: 22px;
+          }
+
+          &::before {
+            top: 7px;
+          }
+        }
+
+        .item-right {
+          span {
+            font-size: 14px;
+            line-height: 21px;
+          }
+
+          .address {
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 375px) {
+    .form-content {
+      .item {
+        .item-left {
+          padding-left: 13px;
+
+          span {
+            font-size: 13px;
+            line-height: 20px;
+          }
+        }
+
+        .item-right {
+          .business-content {
+            display: block;
+          }
+
+          span {
+            font-size: 12px;
+            line-height: 20px;
+          }
+
+          .address {
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+  }
+}

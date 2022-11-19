@@ -1,0 +1,51 @@
+td, th {
+  //padding: 17px 10px 17px 20px
+}
+
+.table {
+  margin-bottom: 15px;
+  overflow-x: auto;
+
+  i {
+    color: #BCBCCB;
+    opacity: 0.5;
+  }
+
+  i.active {
+    color: #111111;
+    opacity: 1;
+  }
+
+  .fields {
+    font-size: 13px;
+    color: #333333;
+    white-space: nowrap;
+  }
+
+  .info {
+    font-size: 15px;
+    color: #333333;
+  }
+}
+
+.table__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    font-size: 13px;
+    color: #4E5768;
+    margin-top: 4px;
+  }
+
+  &__pagination {
+    ul {
+      margin-bottom: 0;
+    }
+
+    li.active {
+      background-color: #1155CC;
+    }
+  }
+}

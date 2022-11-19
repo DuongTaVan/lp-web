@@ -1,0 +1,21 @@
+@import 'gift';
+@import 'join_course';
+@import 'join-course_sp';
+@import 'modal';
+@import 'box-chat';
+@import "video_call";
+@import "extension_request";
+@import 'header';
+
+//footer
+.l-footer__content {
+  max-width: 503px;
+  width: 100% !important;
+}
+body {
+  min-width: 320px;
+}
+
+.dropdown-menu {
+  margin: -0.125rem;
+}

@@ -1,0 +1,172 @@
+//Back Ground Css
+.background-body {
+  margin: 19px 0;
+  max-height: 462.43px;
+
+  &__background-block {
+    width: 100%;
+    height: auto;
+
+    &__image {
+      width: 100%;
+      height: auto;
+      max-height: 420px;
+    }
+
+    &__change-image {
+      img {
+        border-radius: 5px;
+      }
+
+      &__title {
+        padding: 0 0 7px;
+        border-bottom: 0.7111px solid #F1F1F1;
+        margin-bottom: 11px;
+        padding-right: 10px;
+
+        &__name {
+          font-weight: 600;
+          font-size: 14px;
+          color: #2A3242;
+        }
+
+        &__remove-image {
+          cursor: pointer;
+          font-weight: 700;
+          line-height: 10px;
+          color: #4E5768;
+          text-shadow: 0 1px 0 #fff;
+          align-self: center;
+
+          span {
+            font-size: 16px !important;
+          }
+          &__background {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            z-index: 99;
+          }
+          &__icon {
+            transform: scale(0.5);
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            z-index: 99;
+          }
+        }
+      }
+
+      &__img-preview {
+        width: 100%;
+        height: 210px;
+        margin: 5px 0 10px 0;
+        text-align: center;
+        padding-left: 3px;
+        padding-right: 10px;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          height: 100%;
+        }
+
+        &__none {
+          height: 210px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          background: #F9FAFB;
+          border: 0.87835px solid #ECECEC;
+          border-radius: 5px;
+
+          img {
+            width: auto;
+            height: auto;
+          }
+        }
+      }
+
+      &__choose-image {
+        width: 100%;
+        height: auto;
+        max-height: 225px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 5px 20px 0 10px;
+
+        &__img-custom {
+          cursor: pointer;
+          border-radius: 1.7567px;
+          padding: 5px 7px;
+          height: 73px;
+
+          .img-background {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+          }
+        }
+
+        .btn-custom-bg {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          background: #F9FAFB;
+          border: 0.87835px solid #ECECEC;
+          box-sizing: border-box;
+          padding: 6px 0;
+          cursor: pointer;
+          margin-bottom: 0;
+          border-radius: 5px;
+
+          #upload-photo {
+            opacity: 0;
+            position: absolute;
+            z-index: -1;
+          }
+        }
+      }
+
+      //Custom scroll
+      &__choose-image::-webkit-scrollbar {
+        width: 5px;
+        height: 15px;
+      }
+
+      /* Track */
+      &__choose-image::-webkit-scrollbar-track {
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      &__choose-image::-webkit-scrollbar-thumb {
+        cursor: pointer;
+        background: #EDEFF0;
+        border-radius: 26.3505px;
+      }
+
+      /* Handle on hover */
+      &__choose-image::-webkit-scrollbar-thumb:hover {
+        background: #c0c1c2;
+      }
+
+      //End Custom Scroll
+    }
+  }
+}
+
+//Back Ground Css
+@media (max-width: 414px) {
+  .background-body {
+    &__background-block {
+      &__change-image {
+        margin-top: 15px;
+      }
+    }
+  }
+}

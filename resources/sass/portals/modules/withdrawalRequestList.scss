@@ -1,0 +1,336 @@
+.withdrawal-list {
+  .modal-dialog-withdrawal {
+    display: flex;
+    justify-content: space-evenly;
+
+    .box_title {
+      padding: 0px 0 18px 0 !important;
+    }
+
+    .modal-content-withdrawal {
+      width: 400px;
+    }
+
+    .modal-form-footer {
+      margin: 0px 10px;
+    }
+
+    .button--right {
+      margin: 0 10px;
+    }
+  }
+
+  &__title {
+    p {
+      margin: 22px 25px;
+      font-size: 18px;
+      line-height: 24px;
+      color: #43425D;
+    }
+  }
+
+  &__content {
+    padding-bottom: 20px;
+    background: #FFFFFF;
+    margin: 0 29px 30px 25px;
+
+    #form-search {
+      padding: 18px 0 0 30px;
+    }
+
+    .list-option--top {
+      font-size: 12px;
+
+      input {
+        height: 40px;
+        border: 1px solid #CCCCCC;
+        border-radius: 3px;
+      }
+
+      p {
+        margin-top: 10px;
+        margin-bottom: 0;
+        color: #333333;
+      }
+
+      input {
+        padding: 0 10px;
+      }
+
+      select {
+        padding: 0 20px 0 10px;
+        height: 30px;
+        min-width: 153px;
+        margin-right: 20px;
+        border: solid 1px #CCCCCC;
+      }
+
+      .user-id {
+        margin-right: 20px;
+        width: 134px;
+      }
+    }
+
+    .list-option--bottom {
+      font-size: 12px;
+
+      input {
+        height: 30px;
+        border: 1px solid #CCCCCC;
+        border-radius: 3px;
+        padding: 0 10px;
+      }
+
+      margin-bottom: 30px;
+      position: relative;
+
+      p {
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+
+      .user_id {
+        width: 135px;
+        margin-right: 20px;
+      }
+
+      .status {
+        height: 30px;
+        min-width: 153px;
+        margin-right: 20px;
+        border: solid 1px #CCCCCC;
+      }
+
+      .nickname {
+        width: 265px;
+        margin-right: 20px;
+      }
+
+      .btn-search {
+        width: 60px;
+        height: 30px;
+        margin-left: 40px;
+        position: absolute;
+        bottom: 0;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        border-radius: 3px;
+        font-size: 15px;
+        background-color: #1155CC;
+        border-color: #1874C4;
+
+        &:active {
+          background-color: #1874C4 !important;
+          border-color: #1874C4 !important;
+        }
+
+        &:hover {
+          background-color: #1874C4 !important;
+          border-color: #1874C4 !important;
+        }
+      }
+    }
+
+    .table-content {
+      margin-bottom: 10px;
+      padding: 0 30px;
+
+      th {
+        font-size: 13px;
+        height: 50px;
+        border-top: solid 2px #CCCCCC;
+        border-bottom: solid 2px #CCCCCC;
+        border-right: solid 2px #CCCCCC;
+
+        &:last-child {
+          border-right: solid 1px #CCCCCC;
+        }
+      }
+
+      tr {
+        &:last-child {
+          td {
+            border-bottom: solid 1px #CCCCCC;
+          }
+        }
+
+        td {
+          border-right: solid 2px #CCCCCC;
+
+          &:last-child {
+            border-right: solid 1px #CCCCCC;
+          }
+        }
+      }
+
+      #withdrawal_status {
+        height: 30px;
+        min-width: 153px;
+        margin-right: 20px;
+      }
+
+      #withdrawal_id, #userID {
+        min-width: 100px;
+      }
+
+      #application-date {
+        min-width: 200px;
+      }
+
+      #username {
+        min-width: 120px;
+      }
+
+      #type, #status {
+        min-width: 148px;
+      }
+
+      #transfer-amount-of-money {
+        min-width: 150px;
+      }
+
+      #bank-name {
+        min-width: 150px;
+      }
+
+      #branch-name {
+        min-width: 150px;
+      }
+
+      #account-type {
+        min-width: 119px;
+      }
+
+      #account-number {
+        min-width: 145px;
+      }
+
+      #account-holder {
+        min-width: 200px;
+      }
+
+      #transferred-registration-date-and-time {
+        min-width: 228px;
+      }
+
+      #transfer-date {
+        min-width: 162px;
+      }
+
+      .operation {
+        min-width: 100px;
+        max-width: 150px;
+      }
+      .operation-custom {
+        min-width: 130px;
+        max-width: 150px;
+      }
+
+      .btn_withdrawal, .btn_sendmail {
+        height: 30px;
+        border: solid 1px #CCCCCC;
+        background-color: #FFFFFF;
+        font-size: 15px;
+        color: #666666;;
+        padding: 0 20px;
+      }
+
+      .record {
+        margin-bottom: 10px;
+
+        .custom-select {
+          width: 80px;
+          height: 30px;
+          margin-right: 10px;
+        }
+
+        span {
+          font-size: 15px;
+        }
+      }
+
+      .table {
+
+        .withdrawal-list-info {
+          td {
+            vertical-align: middle;
+            color: #333333;
+            font-size: 15px;
+            line-break: anywhere;
+            white-space: nowrap;
+          }
+
+          .withdrawal_status {
+            min-width: 100px;
+            max-width: 120px;
+
+            .withdrawal_status-content {
+              border-radius: 15px;
+              color: white;
+              padding: 2px;
+              text-align: center;
+            }
+
+            .bg-red {
+              background-color: #FF0000;
+            }
+
+            .bg-green {
+              background-color: #40AA71;
+            }
+
+            .bg-blue {
+              background-color: #1155CC;
+            }
+          }
+
+          .scheduled_date {
+            color: #E52626;
+          }
+        }
+
+        margin-bottom: unset;
+
+        .box_title {
+          padding-bottom: 33px;
+
+          p {
+            color: #333333;
+            margin: unset;
+            font-size: 15px;
+          }
+        }
+
+        .modal-footer {
+          border-top: unset;
+          padding-bottom: 39px;
+
+          .button--left {
+            height: 50px;
+            background-color: #FFFFFF;
+            color: #000000;
+            border-radius: 3px;
+            border: solid 1px #CCCCCC;
+            width: 150px;
+            font-size: 15px;
+          }
+
+          .button--right {
+            height: 50px;
+            background-color: #1155CC;
+            color: #FFFFFF;
+            border-radius: 3px;
+            border: solid 1px #CCCCCC;
+            width: 150px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .table__footer {
+      margin: 0 30px 10px 30px;
+    }
+  }
+}

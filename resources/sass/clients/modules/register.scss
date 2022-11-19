@@ -1,0 +1,310 @@
+.register {
+  width: 630px;
+  border: 1px solid #D8D8D8;
+  background-color: #F7F7F7;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 0 auto 67px;
+  padding: 29px 164px;
+  min-height: 383px;
+
+  h1 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+
+  &__box-wrap {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+  }
+
+  .login__label {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #2A3242;
+    margin-bottom: 11px;
+
+    span {
+      cursor: pointer;
+      text-decoration: underline;
+      color: #1877F2;
+
+      a {
+        display: inline-block;
+        color: #46CB90;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__member {
+    background-color: #EAEAEA;
+    color: #2A3242;
+    font-size: 14px;
+    line-height: 21px;
+    border: none;
+    margin-bottom: 11px;
+    cursor: grab !important;
+  }
+
+  &__google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #2A3242;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 11px;
+    &:hover, &:active {
+      text-decoration: none;
+      color: #2A3242!important;
+    }
+
+    img {
+      left: 13px;
+    }
+  }
+
+  &__line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00C300;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: none;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 11px;
+    &:hover, &:active {
+      text-decoration: none;
+      color: #FFFFFF!important;
+    }
+
+    img {
+      left: 13px;
+    }
+  }
+
+  &__facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1877F2;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: none;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 20px;
+    &:hover, &:active {
+      text-decoration: none;
+      color: #FFFFFF!important;
+    }
+
+    img {
+      left: 18px;
+    }
+  }
+
+  .horizontal-line {
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 14px;
+    line-height: 21px;
+    &__text {
+      font-size: 10px;
+      line-height: 15px;
+      color: #2A3242;
+    }
+
+    div {
+      width: 119px;
+      height: 1px;
+      background-color: rgba(78, 87, 104, 0.2);;
+    }
+  }
+
+  &__label-email {
+    height: 45px;
+    background-color: #46CB90;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+// MOBILE
+@media only screen and (max-width: 767px) {
+  .register-wrap {
+    padding: 0 10px;
+    .register {
+      width: 100%;
+      border: 1px solid #D8D8D8;
+      background-color: #F7F7F7;
+      box-sizing: border-box;
+      border-radius: 5px;
+      margin: 0;
+      padding: 24px 46px;
+      min-height: 370px;
+    
+      h1 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        font-style: normal;
+        margin-bottom: 10px;
+      }
+    
+      &__box-wrap {
+        width: 100%;
+        height: 45px;
+        border-radius: 5px;
+      }
+    
+      .login__label {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 21px;
+        color: #2A3242;
+        margin-bottom: 10px;
+    
+        span {
+          cursor: pointer;
+          text-decoration: underline;
+          color: #1877F2;
+    
+          a {
+            display: inline-block;
+            color: #46CB90;
+          }
+        }
+      }
+    
+      &__member {
+        background-color: #EAEAEA;
+        color: #2A3242;
+        font-size: 14px;
+        line-height: 21px;
+        border: none;
+        margin-bottom: 11px;
+        cursor: grab !important;
+      }
+    
+      &__google {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: #2A3242;
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        &:hover, &:active {
+          text-decoration: none;
+          color: #2A3242!important;
+        }
+    
+        img {
+          left: 13px;
+        }
+      }
+    
+      &__line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #00C300;
+        border-radius: 5px;
+        color: #FFFFFF;
+        border: none;
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        &:hover, &:active {
+          text-decoration: none;
+          color: #FFFFFF!important;
+        }
+    
+        img {
+          left: 13px;
+        }
+      }
+    
+      &__facebook {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1877F2;
+        border-radius: 5px;
+        color: #FFFFFF;
+        border: none;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 20px;
+        &:hover, &:active {
+          text-decoration: none;
+          color: #FFFFFF!important;
+        }
+    
+        img {
+          left: 18px;
+        }
+      }
+    
+      .horizontal-line {
+        margin-bottom: 20px;
+        color: #000000;
+        font-size: 14px;
+        line-height: 21px;
+        &__text {
+          font-size: 10px;
+          line-height: 15px;
+          color: #2A3242;
+          white-space: nowrap;
+          margin: 0 15px;
+        }
+    
+        div {
+          width: 119px;
+          height: 1px;
+          background-color: rgba(78, 87, 104, 0.2);;
+        }
+      }
+    
+      &__label-email {
+        height: 45px;
+        background-color: #46CB90;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

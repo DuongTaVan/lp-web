@@ -1,0 +1,93 @@
+.teacher-sidebar-right {
+  &__list {
+    &__option {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      color: #2A3242;
+      padding: 5px 5px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 5px;
+      margin-right: 15px;
+
+      &__select {
+        .btn-option-drop {
+          padding: 6px 12px;
+          font-weight: 600;
+          font-size: 14px;
+          background: #fff;
+          color: #2A3242;
+          border: 1.04171px solid rgba(78, 87, 104, 0.2);
+          border-radius: 5px;
+          position: relative;
+          width: 96px;
+          height: 35px;
+
+          .icon-dropdown {
+            position: absolute;
+            width: 14px;
+            height: 13px;
+            right: 1px;
+            top: 10px;
+          }
+        }
+
+        .btn-option-drop:focus {
+          box-shadow: none;
+        }
+
+        .btn-option-drop::after {
+          display: none;
+        }
+
+        .drop-search-option {
+          padding: 0;
+          text-align: center;
+          border-radius: 5px;
+
+          .drop-search-option-item {
+            padding: 7px 19px;
+            background: #ffff;
+            color: #2A3242;
+            font-weight: 300;
+            font-size: 14px;
+            border-radius: 5px;
+          }
+
+          .active-option {
+            color: #46CB90;
+            background: rgba(70, 203, 144, 0.3);
+            border-radius: 5px;
+          }
+
+          //.drop-search-option-item:hover {
+          //  color: #46CB90;
+          //  background: rgba(70, 203, 144, 0.3);
+          //}
+        }
+
+      }
+
+      &__new-order, &__oldest-first {
+        margin-left: 45.2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__text {
+          margin-left: 9.06px;
+        }
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

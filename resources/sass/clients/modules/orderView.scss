@@ -1,0 +1,680 @@
+.main {
+  //background: #fff;
+}
+
+#review-success {
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    color: #2A3242;
+  }
+}
+
+.order-view {
+  &__header {
+    &__text {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #2A3242;
+      padding: 28px 0;
+      background: #F9FAFB;
+    }
+  }
+
+  &__content {
+    padding: 20px calc(346px - 120px) 52px calc(346px - 120px);
+
+    .error {
+      color: #EE3D48;
+    }
+
+    &__button {
+      margin-top: 25px;
+
+      button {
+        border: 1px solid rgba(78, 87, 104, 0.2);
+        box-sizing: border-box;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        max-width: 150px;
+        font-size: 14px;
+        width: 100%;
+        margin: auto;
+        font-weight: 700;
+        padding: 8px 0;
+        align-content: center;
+      }
+
+      a {
+        border: 1px solid rgba(78, 87, 104, 0.2);
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+        color: #2A3242;
+        width: 150px;
+        height: 41px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
+    }
+
+    &__title {
+      border-bottom: 1px solid rgba(78, 87, 104, 0.17);;
+      padding-bottom: 18px;
+
+      .title-review {
+        border-left: 3px solid #46CB90;
+        padding-left: 10px;
+      }
+
+      &__text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #2A3242;
+      }
+    }
+
+    &__satisfaction {
+      display: flex;
+      margin-top: 20.13px;
+
+      &__left {
+        margin-right: 107px;
+        max-width: 87px;
+        width: 100%;
+
+        &__name {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 24px;
+          color: #2A3242;
+        }
+
+        &__require {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 16px;
+          color: #EE3D48;
+        }
+      }
+
+      &__right {
+        &__rate {
+          display: flex;
+          align-items: center;
+
+          &__rating {
+            &__list {
+              ul {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0px;
+
+                li {
+
+                  i {
+                    font-size: 30px;
+                    color: #E5E5E5;
+                  }
+
+                  .active {
+                    color: #FFD545;
+                  }
+                }
+              }
+
+              &__second {
+                transform: rotateY(180deg);
+                margin-left: -3px;
+                margin-right: 22.83px;
+              }
+            }
+          }
+
+          &__text {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 21px;
+            color: #A9A9A9;
+            margin-bottom: 5px;
+          }
+        }
+
+        &__click {
+          &__text {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 18px;
+            color: #A9A9A9;
+          }
+        }
+      }
+    }
+
+    &__review-text {
+      display: flex;
+      margin-top: 20.13px;
+
+      &__left {
+        margin-right: 107px;
+        max-width: 87px;
+        width: 100%;
+
+        &__name {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 24px;
+          color: #2A3242;
+        }
+
+        &__require {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 16px;
+          color: #EE3D48;
+        }
+      }
+
+      &__right {
+        width: 100%;
+
+        &__area {
+          textarea {
+            width: 100%;
+            min-height: 137px;
+            border: 1px solid #F1F1F1;
+            border-radius: 5px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            //color: #A9A9A9;
+            outline: unset;
+            padding: 7px 9px;
+
+            &::placeholder {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              color: #A9A9A9;
+            }
+          }
+        }
+
+        &__sum {
+          text-align: right;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          color: #A9A9A9;
+
+        }
+      }
+
+    }
+
+    &__publish-profile {
+      &__ct {
+        margin-top: 25px;
+
+        &__accept {
+          display: flex;
+          align-items: center;
+          position: relative;
+          height: max-content;
+          /* Hide the browser's default checkbox */
+          &__container {
+            /* Customize the label (the container) */
+            display: block;
+            padding-left: 21px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+
+          &__container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+          }
+
+          /* Create a custom checkbox */
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            background-color: #eee;
+            border-radius: 2px;
+          }
+
+          /* On mouse-over, add a grey background color */
+          &__container:hover input ~ .checkmark {
+            background-color: #ccc;
+          }
+
+          /* When the checkbox is checked, add a blue background */
+          &__container input:checked ~ .checkmark {
+            background-color: #46CB90;
+          }
+
+          /* Create the checkmark/indicator (hidden when not checked) */
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+
+          /* Show the checkmark when checked */
+          &__container input:checked ~ .checkmark:after {
+            display: block;
+          }
+
+          /* Style the checkmark/indicator */
+          &__container .checkmark:after {
+            left: 5px;
+            top: 1px;
+            width: 6px;
+            height: 11px;
+            border: solid white;
+            border-width: 0 2px 2px 0px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+
+          &__text {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            color: #4E5768;
+
+            label {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        &__desc {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 18px;
+          color: #A9A9A9;
+          margin-top: 3px;
+        }
+      }
+    }
+
+    &__publish-note {
+      &__ct {
+        margin-top: 25px;
+
+        &__accept {
+          display: flex;
+          align-items: center;
+          position: relative;
+          height: max-content;
+          /* Hide the browser's default checkbox */
+          &__container {
+            /* Customize the label (the container) */
+            display: block;
+            padding-left: 21px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+
+          &__container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+          }
+
+          /* Create a custom checkbox */
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            background-color: #eee;
+          }
+
+          /* On mouse-over, add a grey background color */
+          &__container:hover input ~ .checkmark {
+            background-color: #ccc;
+          }
+
+          /* When the checkbox is checked, add a blue background */
+          &__container input:checked ~ .checkmark {
+            background-color: #46CB90;
+          }
+
+          /* Create the checkmark/indicator (hidden when not checked) */
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+
+          /* Show the checkmark when checked */
+          &__container input:checked ~ .checkmark:after {
+            display: block;
+          }
+
+          /* Style the checkmark/indicator */
+          &__container .checkmark:after {
+            left: 6px;
+            top: 0px;
+            width: 6px;
+            height: 13px;
+            border: solid white;
+            border-width: 0 3px 3px 0px;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+
+          &__text {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            color: #4E5768;
+          }
+        }
+
+        &__desc {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 10px;
+          line-height: 18px;
+          color: #A9A9A9;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    &__course-submit {
+      margin: 25px 0;
+      text-align: center;
+
+      &__btn-return, &__btn-post {
+        padding: 9px 60px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      &__btn-return {
+        color: #2A3242;
+        text-decoration: none;
+        margin-right: 20px;
+        background: #FFFFFF;
+        border: 1px solid #DCDDE1;
+      }
+
+      &__btn-return:hover, &__btn-post {
+        text-decoration: none;
+      }
+
+      &__btn-post {
+        color: #fff;
+        background: #46CB90;
+        border: 1px solid #46CB90;
+      }
+    }
+  }
+}
+
+.popup-course-review {
+  &__content {
+    padding: 29px;
+
+    &__user-image {
+      text-align: center;
+
+      img {
+        max-width: 42px;
+        max-height: 42px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      &__title-img {
+        font-size: 12px;
+        font-weight: 300;
+      }
+    }
+
+    &__user-comment {
+      position: relative;
+      padding: 15px 20px;
+      background: #f9fafb;
+      border-radius: 1.96916px;
+
+      &__evaluate {
+        margin: 5px 0;
+
+        &__voting img {
+          margin-bottom: 5px;
+        }
+
+        &__date {
+          font-weight: 300;
+          font-size: 12px;
+        }
+      }
+    }
+
+    &__user-comment::before {
+      border-top: 15px solid transparent;
+      border-right: 20px solid #f9fafb;
+      border-bottom: 15px solid transparent;
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 19px;
+      left: -18px;
+    }
+
+    &__close-course-review {
+      text-align: center;
+      width: 100%;
+      margin: 20px 0px 0px 0px;
+
+      #closeReview {
+        max-width: 150px;
+        height: 41px;
+        padding: 0;
+        line-height: 41px;
+        width: 100%;
+      }
+
+      button {
+        padding: 10px 54px;
+        background: #46CB90;
+        border: 1px solid #46CB90;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+#order-view__content__satisfaction__right__rate__text_SP {
+  display: none;
+}
+
+@media only screen and (max-width: 414px) {
+  .popup-course-review {
+    padding-right: 0 !important;
+
+    &__content {
+      .user-image-outline {
+        padding: 0;
+        padding-bottom: 7px;
+      }
+
+      &__close-course-review {
+        margin-top: 10px;
+
+        #closeReview {
+          max-width: 150px;
+          height: 41px;
+          padding: 0;
+          line-height: 41px;
+          width: 100%;
+        }
+      }
+
+      .user-comment-outline {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      &__user-image {
+        text-align: left;
+        display: flex;
+        align-items: center;
+
+        &__title-img {
+          font-weight: bold;
+        }
+
+        img {
+          max-width: 35px;
+          max-height: 35px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          margin-right: 6px;
+        }
+      }
+
+      &__user-comment {
+        padding: 8px 10px;
+
+        &__comment {
+          font-size: 12px;
+        }
+      }
+
+      &__user-comment::before {
+        content: none;
+      }
+    }
+  }
+  #order-view__content__satisfaction__right__rate__text_SP {
+    display: block;
+  }
+  #order-view__content__satisfaction__right__rate__text_PC {
+    display: none;
+  }
+  .main {
+    .order-view {
+      &__content {
+        padding: unset;
+
+        &__title {
+          padding-bottom: 10px;
+        }
+
+        &__satisfaction {
+          &__left {
+            margin-right: unset;
+          }
+
+          &__right {
+            &__rate {
+              display: block;
+            }
+
+            &__click {
+              width: 90%;
+              text-align: center;
+            }
+
+            .click-review {
+              width: 100% !important;
+
+              &__text {
+                margin-top: 0;
+              }
+            }
+
+            .text-review {
+              margin-top: 0;
+              text-align: center;
+            }
+          }
+        }
+
+        &__review-text {
+          display: block;
+        }
+
+        &__button {
+          button {
+            max-width: unset;
+            width: 100%;
+            margin-bottom: 88px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .order-view {
+    &__content {
+      &__review-text {
+        &__right {
+          &__area {
+            textarea {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

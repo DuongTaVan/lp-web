@@ -1,0 +1,264 @@
+.image-path {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px 60px 30px 60px;
+
+  &__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    span {
+      color: #43425D;
+    }
+  }
+
+  #select-per-page {
+    color: #333333 ;
+    font-size: 15px;
+  }
+  .card {
+    background-color: $white;
+    padding: 30px;
+    padding-top: 20px;
+    box-shadow: 0 0 10px #0000001A;
+  }
+
+  .list-option--top {
+    font-size: 12px;
+
+    input {
+      height: 40px;
+      border: 1px solid #CCCCCC;
+      border-radius: 3px;
+    }
+
+    p {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    input, select {
+      padding: 0 10px;
+    }
+
+    .user-id {
+      margin-right: 20px;
+      width: 134px;
+    }
+
+    .status {
+      margin-right: 20px;
+      width: 214px;
+      height: 40px;
+    }
+  }
+
+  .list-option--bottom {
+    font-size: 12px;
+
+    input, select {
+      padding: 0 10px;
+    }
+
+    input {
+      height: 40px;
+      border: 1px solid #CCCCCC;
+      border-radius: 3px;
+    }
+
+    margin-bottom: 30px;
+    position: relative;
+
+    p {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    .golf-area-id {
+      height: 40px;
+      width: 157px;
+      margin-right: 20px;
+    }
+
+    .plan-id {
+      height: 40px;
+      width: 214px;
+      margin-right: 20px;
+    }
+
+    .golf-course {
+      width: 327px;
+      margin-right: 20px;
+    }
+
+    .btn-search {
+      width: 60px;
+      height: 40px;
+      margin-left: 20px;
+      position: absolute;
+      bottom: 0;
+      border: none;
+      box-shadow: none;
+      outline: none;
+      border-radius: 3px;
+      font-size: 15px;
+    }
+  }
+
+  hr {
+    margin: 0 -30px
+  }
+
+  .record {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    &__select {
+      margin-right: 10px;
+      width: 80px;
+      height: 40px;
+      box-shadow: none;
+    }
+
+    span {
+      color: #333333;
+    }
+  }
+
+  table, td, th {
+    border: 1px solid #CCCCCC;
+    border-collapse: collapse;
+  }
+
+  td, th {
+    padding: 17px 20px
+  }
+
+  &__table {
+    margin-bottom: 15px;
+    table {
+      width: 100%;
+      max-width: 100%;
+      .user-link-detail {
+        color: #1874C4;
+        text-decoration: none;
+      }
+    }
+    i {
+      color: #BCBCCB;
+      opacity: 0.5;
+    }
+
+    .image-id, .user-id, .type-wrap {
+      min-width: 150px;
+    }
+
+    .updated-at {
+      min-width: 150px;
+    }
+
+    i.active {
+      color: #111111;
+      opacity: 1;
+    }
+
+    .fields {
+      font-size: 13px;
+    }
+
+    .user-info {
+      font-size: 15px;
+      color: #333333;
+    }
+
+    .btn_user-detail {
+      border: none;
+      outline: none;
+      background-color: #ECECEC;
+      border-radius: 3px;
+      width: 80px;
+      height: 40px;
+      font-size: 13px;
+    }
+
+    .button {
+      width: 60px;
+      height: 30px;
+      font-size: 13px;
+      line-height: 13px;
+
+      &--left {
+        background-color: #1874C4;
+        color: #ffffff;
+        margin-right: 10px;
+      }
+
+      &--right {
+        background-color: #FF0000;
+        color: #ffffff;
+      }
+    }
+
+    .identity-image {
+      width: 263px;
+      height: 243px;
+    }
+
+    .option {
+      width: 190px;
+    }
+  }
+
+  .table__footer {
+    &__text {
+      font-size: 13px;
+    }
+
+    &__pagination {
+      li.active {
+        background-color: #1874C4;
+      }
+    }
+  }
+
+  .modal-content {
+    width: 400px;
+    margin: auto;
+
+    .modal-header {
+      border: none;
+      padding-bottom: 0px;
+    }
+
+    .box-md-title {
+      margin-bottom: 2px;
+    }
+
+    .modal-footer {
+      padding-top: 0px;
+      border: none;
+      display: flex;
+      justify-content: space-evenly;
+
+      .button-confirm {
+        width: 150px;
+        height: 50px;
+
+        &--left {
+          color: #000000;
+          border: 1px solid #0000001A;
+        }
+
+        &--right {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1700px) {
+  .image-path__table {
+    overflow-x: scroll;
+  }
+}

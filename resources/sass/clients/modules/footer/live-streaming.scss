@@ -1,0 +1,208 @@
+#live-streaming {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 5px;
+
+  .live-streaming {
+    display: flex;
+    padding: 25px 22px 40px;
+
+    .col3 {
+      width: 268px;
+      .rectangle {
+        background: #ffffff;
+        border: 1px solid #dcdde1;
+        border-radius: 5px;
+
+        &__description {
+          padding: 12px 10px 12px;
+          cursor: pointer;
+
+          &__text {
+            margin-left: 10px;
+            color: #2a3242;
+          }
+
+          a {
+            color: #4e5768;
+            margin-left: 35px;
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .active {
+        background: #f5f5f5;
+        border-radius: 5px;
+      }
+    }
+
+    .col9 {
+      margin-left: 21px;
+      width: 627px;
+
+      .body {
+        color: #2a3242;
+        header {
+          span {
+            display: block;
+          }
+
+          .title {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 10px;
+          }
+
+          .sub-title {
+            line-height: 24px;
+            color: #46cb90;
+          }
+        }
+
+        &__content {
+          margin-top: 35px;
+
+          #step1 {
+            .step1 {
+              color: #46cb90;
+              margin-bottom: 5px;
+            }
+
+            .image-step1 {
+              margin-top: 10px;
+              object-fit: cover;
+              width: 100%;
+              max-width: 609px;
+              &.custom{
+                    width: 609px;
+              }
+            }
+            .image-step1--sp {
+              display: none;
+            }
+          }
+
+          #step2 {
+            margin-top: 35px;
+            .step2 {
+              color: #46cb90;
+              margin-bottom: 5px;
+            }
+
+            .image-step2 {
+              margin-top: 5px;
+              object-fit: cover;
+              width: 100%;
+              max-width: 609px;
+            }
+            .image-step2--sp{
+              display: none;
+            }
+
+            .mb-25 {
+              margin-bottom: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 414px) {
+    max-width: 394px;
+    .live-streaming {
+      padding: 17px 10px 20px;
+      flex-direction: column;
+
+      .col3 {
+        width: 100%;
+        .rectangle {
+          display: flex;
+
+          &__description {
+            padding: 12px 30px;
+
+            img {
+              display: none;
+            }
+
+            &__text {
+              font-size: 14px;
+              line-height: 21px;
+              font-weight: bold;
+              margin-left: 0;
+            }
+
+            a {
+              margin-left: 0;
+              font-size: 14px;
+              line-height: 21px;
+            }
+          }
+        }
+      }
+
+      .col9 {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 21px;
+
+        .body {
+          &__content {
+            margin-top: 30px;
+
+            #step1 {
+              span {
+                white-space: normal !important;
+                line-height: 21px;
+              }
+              .image-step1 {
+                display: none;
+              }
+
+              .image-step1--sp {
+                display: block;
+                margin: 10px auto 0;
+                width: 100%;
+                max-width: 310px;
+              }
+            }
+
+            #step2 {
+              margin-top: 30px;
+              .step2 {
+                font-size: 14px;
+                line-height: 21px;
+                color: #46cb90;
+              }
+              .image-step2 {
+                display: none;
+              }
+
+              .image-step2--sp{
+                display: block;
+                margin: 10px auto 0;
+                width: 100%;
+                max-width: 310px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width:320px) {
+
+    .image-step1--sp{
+      width: 100%;
+    }
+    
+    .image-step2--sp{
+      width: 100%;
+    }
+  }
+}

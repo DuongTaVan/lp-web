@@ -1,0 +1,52 @@
+.layout-content {
+  padding-top: 0;
+}
+
+.page-maintain-paragraph {
+  position: relative;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .text_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2A3242;
+  }
+
+  .text_timeline {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #EE3D48;
+  }
+
+  .text_sub {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2A3242;
+  }
+
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+
+  .icon-frog {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+#footer {
+  display: none;
+}

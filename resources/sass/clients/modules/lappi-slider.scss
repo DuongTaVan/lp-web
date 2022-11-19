@@ -1,0 +1,52 @@
+.block-slider {
+  position: relative;
+
+  .lappi-slider__button {
+    cursor: pointer;
+
+    &.disabled {
+      opacity: .5;
+      cursor: default;
+    }
+  }
+
+  .slider-outer {
+    overscroll-behavior-x: none;
+    overflow: hidden;
+    position: relative;
+    width: calc(100% + 15px);
+
+    .lappi-slider {
+      flex-wrap: nowrap;
+      -webkit-box-flex: 0;
+      width: fit-content !important;
+      display: flex;
+
+      a.card {
+        position: relative;
+        width: 212px;
+        height: 300px;
+        transition: opacity .2s;
+        overflow: hidden;
+        flex-shrink: 0;
+
+        &:not(:last-child) {
+          margin-right: 16px;
+        }
+      }
+
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .block-slider {
+    .slider-outer {
+      overflow-x: scroll;
+    }
+
+    &__button {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.auth-email {
+    width: 879px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    &__label {
+        margin-bottom: 18.34px;
+        span {
+            font-size: 24.66px;
+            line-height: 36.99px;
+            color: #2A3242;
+            display: inline-block;
+            margin-left: 14.49px;
+        }
+    }
+    &__content {
+        background-color: #F9FAFB;
+        padding: 32px 0 37px 0;
+        h1 {
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 19px;
+        }
+        &__note {
+            width: 390px;
+            margin: 0 auto 22px;
+            p {
+                margin-bottom: 0;
+                font-size: 14px;
+                line-height: 21px;
+                text-align: left;
+            }
+        }
+        button {
+            background-color: #46CB90;
+            border: 1px solid #46CB90;
+            border-radius: 5px;
+            width: 250px;
+            height: 41px;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+        .link-24h {
+            font-size: 12px;
+            line-height: 18px;
+            color: #2A3242;
+            display: block;
+            margin-bottom: 19px;
+        }
+        .about-lappi {
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 0;
+            color: #2A3242;
+            span {
+                color: #46CB90;
+            }
+        }
+    }
+}

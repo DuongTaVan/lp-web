@@ -1,0 +1,99 @@
+.faq{
+    .content{
+        padding-top: 30px;
+        padding-bottom: 89px;
+        &__container{
+            background-color: #E5E5E5;
+            @media (max-width:414px) {
+                background-color: #f1f1f1;
+            }
+            .expand-item{
+                border-radius: 5px;
+                &:not(:first-child){
+                    margin-top: 10px;
+                }
+                &__title{
+                    background: #E5F0EB;
+                    &--text{
+                        &::before{
+                            content: "Q.";
+                            display:inline-block;
+                            margin-right: 4px;
+                            @media (max-width:414px) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                &__content{
+                    display: flex;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    background: #fff;
+                    @media (max-width:414px) {
+                        padding: 10px;
+                    }
+                    &::before{
+                        content: "A.";
+                        display: block;
+                        font-size: 16px;
+                        font-weight: bold;
+                        transform:translateY(-2px);
+                        margin-right: 4px;
+                        @media (max-width:414px) {
+                            font-size: 12px;
+                            transform: unset;
+                        }
+                    }
+                    .email-icon{
+                        width:13px;
+                    }
+                }
+            }
+        }
+    }
+    .link{
+        text-decoration: underline;
+        color: rgba(70, 203, 144, 1);
+    }
+    .list{
+        &--mt5{
+            margin-top: 5px;
+        }
+        img{
+            width: 10px;
+            transform:translateY(-1px);
+        }
+        &--dot{
+            margin-left: 12px;
+            &>li{
+                &::before{
+                    left: -11px;
+                }
+            }
+        }
+        @media (max-width:414px) {
+            &--none.custom-marker{
+                position: relative;
+                margin-left: 13px;
+                span{
+                    position: absolute;
+                    left: -18px
+                }
+            }
+        }
+    }
+    .group{
+        &:not(:first-child){
+            margin-top: 10px;
+        }
+    }
+    ul{
+        margin-bottom: 0;
+    }
+    .mobile-hide{
+        @media (max-width:414px) {
+            display: none;
+        }
+    }
+}

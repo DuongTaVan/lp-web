@@ -1,0 +1,134 @@
+//Teacher Prepare Trouble Consultation.
+.appearance-effect {
+  margin: 14px 0 13px 0;
+
+  strong {
+    font-weight: 300;
+    font-size: 12px;
+    color: #EE3D48;
+  }
+
+  &__option {
+    padding: 0 22px 0;
+
+    /* The container */
+    &__option-outline {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      margin-bottom: 0;
+
+      span {
+        margin: 0px 5px;
+        font-size: 14px;
+        color: #2A3242;
+      }
+
+      /* Hide the browser's default radio button */
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+    }
+
+
+    /* Create a custom radio button */
+    .checkmark {
+      position: absolute;
+      top: 5px;
+      left: -26px;
+      height: 15px;
+      width: 15px;
+      border: 1px solid #46CB90;
+      border-radius: 50%;
+    }
+
+    /* When the radio button is checked, add a blue background */
+    &__option-outline input:checked ~ .checkmark {
+      background: none;
+    }
+
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the indicator (dot/circle) when checked */
+    &__option-outline input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    /* Style the indicator (dot/circle) */
+    &__option-outline .checkmark:after {
+      top: 2px;
+      left: 2px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #46CB90;
+    }
+  }
+
+  &__option:first-child {
+    padding: 7px 22px 0;
+  }
+}
+
+.note-effect-livestream {
+  max-width: 205px !important;
+}
+
+.note-effect {
+  margin-top: 15px;
+  max-width: 298px;
+  height: auto;
+  font-weight: 300;
+  font-size: 12px;
+  color: #EE3D48;
+
+}
+
+.prepare-note-rule-warring {
+  margin: 21px 0 0 0;
+
+  &__title {
+    font-weight: 300;
+    font-size: 12px;
+    color: #EE3D48;
+  }
+
+  &__note {
+    max-width: 282px;
+    background: #F4664E;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 1px 3px;
+  }
+
+  &__rule-link {
+    margin: 5px 0;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0;
+    color: #46CB90;
+  }
+}
+
+.note-auto-effect {
+  margin: 10px 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #2A3242;
+}
+
+//End Teacher Prepare Trouble Consultation.

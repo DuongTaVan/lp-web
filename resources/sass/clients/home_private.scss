@@ -1,0 +1,21 @@
+.main {
+  .sidebar-right {
+    .card {
+      margin-top: unset !important;
+      height: 300px;
+
+      &__image {
+        .link-item {
+          &__image {
+            height: 148px;
+            max-height: 148px;
+          }
+        }
+      }
+
+      &__content {
+        margin-left: unset !important;
+      }
+    }
+  }
+}

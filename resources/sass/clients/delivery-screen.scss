@@ -1,0 +1,186 @@
+.layout-content {
+  padding-top: 0;
+  background: #E5E5E5;
+}
+
+.delivery-screen {
+  max-width: 960px;
+  margin: 30px auto 61px auto;
+
+  .mb-10px {
+    margin-bottom: 10px;
+  }
+
+  &__header {
+    width: 100%;
+    max-height: 95px;
+    background: #FFF;
+    text-align: center;
+    color: #2A3242;
+    padding: 30px 0 29px 0;
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 1px;
+    }
+
+    .hr {
+      width: 482px;
+      height: 3px;
+      border-radius: 5px;
+      background: #46CB90;
+      margin: 0 auto;
+    }
+  }
+
+  &__header-video-call {
+    width: 100%;
+    max-height: 95px;
+    background: #FFF;
+    text-align: center;
+    color: #2A3242;
+    padding: 30px 0 29px 0;
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 1px;
+    }
+
+    .hr {
+      width: 484px;
+      height: 3px;
+      border-radius: 5px;
+      background: #46CB90;
+      margin: 0 auto;
+    }
+  }
+
+  &__header-fortune {
+    width: 100%;
+    max-height: 95px;
+    background: #FFF;
+    text-align: center;
+    color: #2A3242;
+    padding: 30px 0 29px 0;
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 1px;
+    }
+
+    .hr {
+      width: 442px;
+      height: 3px;
+      border-radius: 5px;
+      background: #46CB90;
+      margin: 0 auto;
+    }
+  }
+
+  &__body {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 25px 30px;
+
+    &__title {
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 35px;
+
+      &__header {
+        font-size: 20px;
+        margin-bottom: 5px;
+        color: #2A3242;
+      }
+
+      &__note {
+        font-size: 16px;
+        color: #46CB90;
+      }
+    }
+
+    &__content {
+      &__title {
+        font-weight: 600;
+        font-size: 14px;
+        color: #2A3242;
+        margin-bottom: 10px;
+      }
+
+      &__image {
+        text-align: center;
+
+        .image-sp {
+          display: none;
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .delivery-screen {
+    margin-top: 20px;
+
+    &__header {
+      padding: 14px 0;
+
+      .title {
+        font-size: 20px;
+      }
+
+      .hr {
+        width: 400px;
+      }
+    }
+
+    &__header-video-call {
+      .title {
+        font-size: 20px;
+        margin-bottom: 1px;
+      }
+
+      .hr {
+        max-width: 395px;
+      }
+    }
+
+    &__header-fortune {
+      .title {
+        font-size: 20px;
+        margin-bottom: 1px;
+      }
+
+      .hr {
+        max-width: 365px;
+      }
+    }
+
+    &__body {
+
+      &__content {
+
+        &__image {
+          text-align: center;
+
+          .image-sp {
+            display: block;
+          }
+
+          .image-pc {
+            display: none;
+          }
+
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
